@@ -1,0 +1,46 @@
+@import '~carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family';
+@import '~carbon-components/scss/globals/scss/typography';
+p {
+    font-family: 'IBM Plex Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 18px;
+    color: #000;
+  margin-bottom: $spacing-05;
+}
+h3 {
+    
+    font-family: 'IBM Plex Sans';
+    font-size: 16px;
+    font-style: bold;
+    margin-bottom: $spacing-05;
+    line-height: 18px;
+    color: #000;
+}
+h4 {
+    width: 100%;
+    font-family: 'IBM Plex Sans';
+    font-size: 16px;
+    font-style: bold;
+    font-weight: 500;
+    line-height: 18px;
+    color: #21272A;
+    text-transform: capitalize;
+    margin-bottom: $spacing-05;
+}
+span {
+    font-family: 'IBM Plex Sans';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 18px;
+    color:#333942;
+    margin-bottom: 5px;
+}
+.landing-page__r1,
+.landing-page__r2,
+.landing-page__r3,
+.landing-page__r4 {
+    margin-bottom: $spacing-05;
+}

@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { LandingPageComponent } from './landing-page.component';
+import {GridModule} from 'carbon-components-angular';
+import {Table, TilesModule, AccordionModule } from 'carbon-components-angular';
 
 describe('LandingPageComponent', () => {
 	let component: LandingPageComponent;
@@ -23,3 +24,5 @@ describe('LandingPageComponent', () => {
 		expect(component).toBeTruthy();
 	});
 });
+
+

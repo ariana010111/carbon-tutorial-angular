@@ -4,12 +4,17 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 
-
+import { GridModule } from 'carbon-components-angular';
+import {TableModule, TilesModule, AccordionModule } from 'carbon-components-angular';
 @NgModule({
 	declarations: [LandingPageComponent],
 	imports: [
 		CommonModule,
-		HomeRoutingModule
+		HomeRoutingModule,
+		GridModule,
+		TableModule,
+		TilesModule,
+		AccordionModule 
 	]
 })
 export class HomeModule { }
