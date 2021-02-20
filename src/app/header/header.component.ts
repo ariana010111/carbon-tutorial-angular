@@ -1,11 +1,17 @@
-import { Component, HostBinding } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 
+
+// @HostBinding('class.bx--header') headerClass = true;
 @Component({
 	selector: 'app-header',
 	templateUrl: './header.component.html',
 	styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
-	// adds padding to the top of the document, so the content is below the header
-	@HostBinding('class.bx--header') headerClass = true;
+export class HeaderComponent implements OnInit {
+
+	constructor() { }
+
+	ngOnInit(): void {
+	}
+
 }
