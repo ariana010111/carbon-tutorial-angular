@@ -1,0 +1,18 @@
+@import "~carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family";
+@import "~carbon-components/scss/globals/scss/typography";
+.bx--grid,
+.bx--col-lg-16 {
+	padding: 0px;
+}
+/*set bg token*/
+@mixin address-list-background() {
+	background-color: $ui-01;
+	&::before {
+	  content: '';
+	  background: $ui-01;
+	}
+  }
+  .address-list__banner {
+	
+	@include address-list-background;
+  }
