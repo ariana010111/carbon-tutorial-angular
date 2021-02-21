@@ -60,7 +60,7 @@ h3 {
 	font-family: "IBM Plex Sans";
 	font-size: 16px;
 	font-style: bold;
-	margin-bottom: $spacing-05;
+	margin: $spacing-05 0;
 	line-height: 18px;
 	color: #000;
 }
@@ -83,6 +83,16 @@ span {
 	line-height: 18px;
 	color: #333942;
 	margin-bottom: 5px;
+}
+p.bx--type-sans {
+	margin-bottom:0;
+}
+.bx--data-table-header {
+	padding: 1rem 0 0rem 0rem;
+    background: #fff;
+	p{
+		margin-bottom: 4px;
+	}
 }
 .landing-page__r1,
 .landing-page__r2,
