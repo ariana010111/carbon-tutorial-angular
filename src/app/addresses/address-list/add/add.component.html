@@ -1,18 +1,61 @@
 <header>
     <div>
         <h1 class="address-list__heading right">
-           Add New Address
+            Add New Address
         </h1>
     </div>
 </header>
-<div ibmGrid class="bx--grid--full-width">
+<form [formGroup]="addressForm" (ngSubmit)="onSubmit()">
+    <div ibmGrid class="bx--grid--full-width">
+        <!--name of address-->
+        <div ibmRow class="form-item">
+            <ibm-label>
+                Name of Address
+                <input ibmText [autocomplete]="false" formControlName="addressName">
+            </ibm-label>
+        </div>
+        <!--post code-->
+        <div ibmRow class="form-item">
+            <ibm-label>
+                Post Code
+                <input ibmText [autocomplete]="false" formControlName="postCode">
+            </ibm-label>
+        </div>
    
-    <div ibmRow class="address-list__r2">
-        <div ibmCol [columnNumbers]="{'lg':16}">
-           
+        <div ibmRow class="form-item">
+            <ibm-label>Huisnr
+            <ibm-select
+            [size]="100"
+            ariaLabel='ngModel select'>
+            <option value="default" disabled selected hidden>Choose an option</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </ibm-select>
+    </ibm-label>
+           </div>
+        <!--Huisnr. Toevoeging-->
+        <div ibmRow class="form-item">
+            <ibm-label>
+                Huisnr. Toevoeging
+                <input ibmText [autocomplete]="false" formControlName="HuisnrT">
+            </ibm-label>
+        </div>
+        <!--Jouw adres-->
+        <div ibmRow class="form-item">
+            <ibm-label>
+                Jouw adres
+                <input ibmText [autocomplete]="false" formControlName="JouwAdres">
+            </ibm-label>
+        </div>
+        <div ibmRow class="form-item">
+            <ibm-label>
+                Post Code
+                <input ibmText [autocomplete]="false" formControlName="postCode">
+            </ibm-label>
         </div>
         <div ibmCol [columnNumbers]="{'lg':16}">
-            
+
             <a href="#" ibmLink>
                 Save as my default address
             </a>
@@ -22,14 +65,13 @@
     <footer>
         <button ibmButton="secondary">
             Cancel
-            
+
             <svg class="bx--btn__icon" ibmIconPending32 size="20"></svg>
-            
-            </button>
-            <button ibmButton class="success">
-               Add Address
-                <svg class="bx--btn__icon" ibmIconAdd size="20"></svg>
+
+        </button>
+        <button ibmButton class="success" type="submit">
+            Add Address
+            <svg class="bx--btn__icon" ibmIconAdd size="20"></svg>
         </button>
     </footer>
-    
-</div>
+</form>
