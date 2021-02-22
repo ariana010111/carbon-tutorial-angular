@@ -15,9 +15,7 @@
 	}
 }
 
-.address-list__r2 {
-	height: calc(100vh - 132px);
-}
+
 /*set bg token*/
 @mixin address-list-background() {
 	background-color: $ui-01;
@@ -31,16 +29,9 @@
 	@include address-list-background;
   }
 
-.footer {
-	background-color: red;
-	position: fixed;
-	bottom: 0;
-	z-index: 8000;
-	width: 100%;
-	right: 0;
-	left: 0;
-	margin: auto;
-	height: 48px;
+footer {
+	
+
 	button {
 		width: 50%;
 		max-width: 50%;
