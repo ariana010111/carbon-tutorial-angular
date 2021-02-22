@@ -8,7 +8,7 @@ const routes: Routes = [
 		component: AddressListComponent
 	},
 	{
-		path: 'add',
+		path: 'address/add',
 		component: AddComponent
 	},
 ];

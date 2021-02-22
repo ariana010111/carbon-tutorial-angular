@@ -3,12 +3,12 @@
         <div class="card" ibmLink>
             <fieldset class="bx--fieldset">
                 <legend class="bx--label"></legend>
-                <ibm-radio-group 
+                <ibm-radio-group
                     aria-label="radiogroup"
-                   
+
                     (change)="onChange($event)">
-                    
-                    <ibm-radio 
+
+                    <ibm-radio
                         [value]="address.title"
                         >
                         {{address.title}}
@@ -18,13 +18,13 @@
 
             <ul class="control-icons">
                 <li>
-                   +
+					<ibm-icon-edit size="16"></ibm-icon-edit>
                 </li>
                 <li>
-                    *
+					<ibm-icon-delete size="16"></ibm-icon-delete>
                 </li>
             </ul>
-           
+
             <address>
                {{address.desc}}
             </address>
@@ -38,5 +38,5 @@
             </ul>
         </div>
     </li>
-   
+
 </ol>
