@@ -21,7 +21,7 @@ header {
 
 
 /*set bg token*/
-@mixin address-list-background() {
+@mixin add-background() {
 	background-color: $ui-01;
 	&::before {
 	  content: '';
@@ -29,8 +29,7 @@ header {
 	}
   }
   header{
-	
-	@include address-list-background;
+	@include add-background;
   }
 
 footer {

@@ -3,52 +3,60 @@
 .bx--grid {
 	padding: 0px;
 }
-.landing-page__banner {
-	padding-top: $spacing-04;
-	padding-bottom: $spacing-04;
-	background-color: #182225;
-	text-align: center;
+header {
+	padding: $spacing-04 0;
 	color: #fff;
 	div {
-	  margin: 0 auto;
-	 
-	  h1 {
-		font-size: 16px;
-		text-transform: uppercase;
-	  }
-	  h2 {
-		text-transform: uppercase;
-		font-size: 13px;
-		color: #fff;
-		text-align: center;
-		/*border style*/
-		position: relative;
-		left: 0;
-		right: 0;
-		margin:$spacing-02 auto;
-		z-index: 1;
-		display: table;
-		white-space: nowrap;
-		&:before,
-		&:after {
-		  border-top: 2px solid #f6c311;
-		  content: "";
-		  display: table-cell;
-		  position: relative;
-		  top: 0.65em;
-		  width: 10px;
-		}
-		&:before {
-		  right: 2.5%;
-		}
-		&:after {
-		  left: 2.5%;
-		}
-	  }
+		margin:0 auto;
+		h1 {
+			font-size: 16px;
+			text-transform: uppercase;
+		  }
+		  h2 {
+			text-transform: uppercase;
+			font-size: 13px;
+			color: #fff;
+			text-align: center;
+			/*border style*/
+			position: relative;
+			left: 0;
+			right: 0;
+			margin:$spacing-02 auto;
+			z-index: 1;
+			display: table;
+			white-space: nowrap;
+			&:before,
+			&:after {
+			  border-top: 2px solid #f6c311;
+			  content: "";
+			  display: table-cell;
+			  position: relative;
+			  top: 0.65em;
+			  width: 10px;
+			}
+			&:before {
+			  right: 2.5%;
+			}
+			&:after {
+			  left: 2.5%;
+			}
+		  }
 	}
   }
+/*set bg token*/
+@mixin landing-page-background() {
+	background-color: $ui-05;
+	&::before {
+	  content: '';
+	  background: $ui-05;
+	}
+  }
+  header {
+	
+	@include landing-page-background;
+  }  
 p {
-	font-family: "IBM Plex Sans";
+	
 	font-size: 14px;
 	font-style: normal;
 	font-weight: normal;
@@ -57,7 +65,7 @@ p {
 	margin-bottom: $spacing-05;
 }
 h3 {
-	font-family: "IBM Plex Sans";
+
 	font-size: 16px;
 	font-style: bold;
 	margin: $spacing-05 0;
@@ -66,7 +74,7 @@ h3 {
 }
 h4 {
 	width: 100%;
-	font-family: "IBM Plex Sans";
+
 	font-size: 16px;
 	font-style: bold;
 	font-weight: 500;
@@ -76,7 +84,7 @@ h4 {
 	margin-bottom: $spacing-05;
 }
 span {
-	font-family: "IBM Plex Sans";
+
 	font-size: 12px;
 	font-style: normal;
 	font-weight: normal;
@@ -103,7 +111,7 @@ p.bx--type-sans {
 .landing-page__r4 {
 	background-color: #f2f4f8;
 	p {
-		font-family: IBM Plex Sans;
+	
 		font-style: normal;
 		font-weight: 600;
 		font-size: 16px;
@@ -131,28 +139,35 @@ p.bx--type-sans {
 
 	
 /*--footer--*/
-.landing-page__r6 {
-	background-color: #f8f8f8;
+footer {
+	background-color: $ui-01;
+	height: 110px;
+div {
+	margin: auto;
 	text-align: center;
-	padding: 24px 0;
-
 	a {
 		color: #121619;
 		text-decoration-line: underline;
-		font-family: IBM Plex Sans;
+	
 		font-style: normal;
 		font-weight: 500;
 		font-size: 12px;
 		line-height: 18px;
-		margin-bottom: $spacing-06;
+		margin: $spacing-05 auto;
+		display: inline-block;
 	}
 	p {
-		color: #a8aabc;
-		font-family: IBM Plex Sans;
+		color: $ui-03;
+	
 		font-style: normal;
 		font-weight: normal;
+		text-align: center;
+		margin: $spacing-05 auto;
 		font-size: 12px;
+		
 	}
+}
+	
 }
 .bx--tile{
 	min-height:$spacing-05 !important;
@@ -160,18 +175,7 @@ p.bx--type-sans {
 	padding: 0;
 }
 
-/*set bg token*/
-@mixin landing-page-background() {
-	background-color: $ui-05;
-	&::before {
-	  content: '';
-	  background: $ui-05;
-	}
-  }
-  .landing-page__banner {
-	
-	@include landing-page-background;
-  }
+
 
   /*---video---*/
   .player {

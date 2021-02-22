@@ -1,11 +1,12 @@
-<div ibmGrid class="bx--grid--full-width">
-    <div ibmRow class="address-list__r1 address-list__banner">
-        <div ibmCol [columnNumbers]="{'lg':16}">
-            <h1 class="address-list__heading right">
-                Address
-            </h1>
-        </div>
+<header>
+    <div>
+        <h1 class="address-list__heading right">
+            Address
+        </h1>
     </div>
+</header>
+<div ibmGrid class="bx--grid--full-width">
+   
     <div ibmRow class="address-list__r2">
         <div ibmCol [columnNumbers]="{'lg':16}">
             <app-address-list-item></app-address-list-item>
@@ -16,18 +17,17 @@
         </div>
     </div>
     <!--footer btns-->
-    <div ibmRow class="address-list__r3 footer">
-       
+    <footer>
         <button ibmButton="secondary">
             cancel
             
             <svg class="bx--btn__icon" ibmIconPending32 size="20"></svg>
             
-			</button>
+            </button>
             <button ibmButton class="success">
                 next
-                <svg class="bx--btn__icon" ibmIconAdd size="100"></svg>
+                <svg class="bx--btn__icon" ibmIconAdd size="20"></svg>
         </button>
-     
-    </div>
+    </footer>
+    
 </div>

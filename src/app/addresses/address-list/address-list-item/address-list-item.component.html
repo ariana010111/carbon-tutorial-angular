@@ -1,21 +1,42 @@
 <ol ibmList>
-    <li ibmListItem>
-        <a href="#" ibmLink [disabled]="disabled" [inline]="inline">
+    <li ibmListItem *ngFor="let address of addresses">
+        <div class="card" ibmLink>
             <fieldset class="bx--fieldset">
-                <legend class="bx--label">{{label}}</legend>
+                <legend class="bx--label"></legend>
                 <ibm-radio-group 
                     aria-label="radiogroup"
-                    [(ngModel)]="radio"
+                    [(ngModel)]="addresses"
                     (change)="onChange($event)">
                     
-                    <ibm-radio *ngFor="let address of addresses"
+                    <ibm-radio 
                         [value]="address.title"
-                       >
+                        >
                         {{address.title}}
                     </ibm-radio>
                 </ibm-radio-group>
             </fieldset>
-        </a>
+
+            <ul class="control-icons">
+                <li>
+                    edit
+                </li>
+                <li>
+                    delete
+                </li>
+            </ul>
+           
+            <address>
+               {{address.desc}}
+            </address>
+            <ul class="delivery-way">
+                <li>
+                   {{address.neighbour}}
+                </li>
+                <li>
+                    {{address.mailbox}}
+                </li>
+            </ul>
+        </div>
     </li>
    
 </ol>

@@ -27,4 +27,29 @@
     display: block;
   }
 
-
+  footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1040;
+    height: 48px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
