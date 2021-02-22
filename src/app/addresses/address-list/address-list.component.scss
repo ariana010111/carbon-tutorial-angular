@@ -1,17 +1,21 @@
 @import "~carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family";
 @import "~carbon-components/scss/globals/scss/typography";
 .bx--grid {
-	padding: 0px;
+	padding:$spacing-04;
 }
-.address-list__banner {
+header {
 	padding-top: $spacing-04;
 	padding-bottom: $spacing-04;
-	h1 {
-		font-family: "IBM Plex Sans";
-		font-size: 20px;
-		font-weight: bold;
-		line-height: 28px;
-		color: $ui-05;
+	text-align: left;
+	div {
+		margin-inline-end: auto;
+		h1 {
+			font-family: "IBM Plex Sans";
+			font-size: 20px;
+			font-weight: bold;
+			line-height: 28px;
+			color: $ui-05;
+		}
 	}
 }
 
@@ -24,7 +28,7 @@
 	  background: $ui-01;
 	}
   }
-  .address-list__banner {
+  header{
 	
 	@include address-list-background;
   }
