@@ -14,7 +14,8 @@ import {TableModule, TilesModule, AccordionModule } from 'carbon-components-angu
 		GridModule,
 		TableModule,
 		TilesModule,
-		AccordionModule 
+		AccordionModule,
+	
 	]
 })
 export class HomeModule { }

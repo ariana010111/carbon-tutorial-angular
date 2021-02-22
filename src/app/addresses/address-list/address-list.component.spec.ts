@@ -1,7 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AddressListComponent } from './address-list.component';
-
+import {GridModule, 
+	ButtonModule
+} from 'carbon-components-angular';
 describe('AddressListComponent', () => {
 	let component: AddressListComponent;
 	let fixture: ComponentFixture<AddressListComponent>;

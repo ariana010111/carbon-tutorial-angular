@@ -16,3 +16,14 @@
 	
 	@include address-list-background;
   }
+
+.footer {
+	background-color: red;
+	button {
+		width: 50%;
+		max-width: 50%;
+	}
+	button.success {
+		background-color: #6c9c46;
+	}
+}
