@@ -112,10 +112,7 @@ p.bx--type-sans {
         
 		padding: $spacing-05;
 	}
-	.bx--col-lg-16 {
-		padding: 0;
-		
-	}
+
 	
 }
 /*--accordion--*/
@@ -126,8 +123,10 @@ p.bx--type-sans {
 	background-color:#343a3f;
 	width:100%;
 	
-	p,.bx--accordion__arrow {
-		color: #fff;
+	p,
+	.bx--accordion__arrow,
+	.bx--accordion__arrow {
+		color: #ffffff;
 	}
 }
 /*--footer--*/
@@ -171,4 +170,65 @@ p.bx--type-sans {
   .landing-page__banner {
 	
 	@include landing-page-background;
+  }
+
+  /*---video---*/
+  .player {
+	  position: relative;
+	  width: 100%;
+	  cursor: pointer;
+	  video {
+		  position: relative;
+		  width: 100%;
+	  }
+	  &:hover {
+		.player-icon {
+		  background-color: rgba(18, 22, 25, 0.5);
+		  width: 100%;
+		}
+		
+		svg {
+		  fill: rgba(255, 255, 255, 0);
+		  stroke: rgba(255, 255, 255, 1);
+		  stroke-width: 30;
+		}
+	}
+	&.paused {
+		&:after {
+		  position: absolute;
+		  z-index: 1;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  content: " ";
+		  background-color: rgba(18, 22, 25, 0.5);
+		
+		  width: 100%;
+		}
+	  }
+	  .player-icon {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 2;
+		background-color: rgba(18, 22, 25, 0.5);
+		transition: all 250ms;
+		
+		svg {
+		  position: absolute;
+		  top: 45%;
+		  left: 45%;
+		  right: 45%;
+		  bottom: 45%;
+		  width: 10%;
+		  height: 10%;
+		  fill: rgba(255, 255, 255, 0);
+		  stroke: rgba(255, 255, 255, 1);
+		  stroke-width: 30;
+		  transition: all 250ms;
+		}
+	  } 
   }

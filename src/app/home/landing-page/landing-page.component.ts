@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild, ElementRef } from '@angular/core';
 import {TableModel,
 TableItem,
 TableHeaderItem} from 'carbon-components-angular'
@@ -10,7 +10,7 @@ TableHeaderItem} from 'carbon-components-angular'
 export class LandingPageComponent implements OnInit {
 	model = new TableModel();
 	constructor() { }
-
+	@ViewChild("videoPlayer", { static: false }) videoplayer: ElementRef;
 	ngOnInit() {
 		this.model.data = [
 			[
@@ -40,4 +40,15 @@ export class LandingPageComponent implements OnInit {
 		
 		  ];
 		}
+
+		isPlay: boolean = false;
+		toggleVideo(event: any) {
+		  this.videoplayer.nativeElement.play();
+		}	
+
+		playPause() {
+			var myVideo: any = document.getElementById("my_video_1");
+			if (myVideo.paused) myVideo.play();
+			else myVideo.pause();
+		  }
 }

@@ -96,7 +96,16 @@
 
     <div ibmRow class="landing-page__r5">
         <div ibmCol [columnNumbers]="{'lg':16}">
-            video comes here...
+            <div class="player">
+                <div class="player-icon" (click)="playPause()">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="512px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve"><g><path d="M128,96v320l256-160L128,96L128,96z"/></g></svg>
+                  </div>
+                <video id="my_video_1" #videoPlayer>
+                    <source src="https://vjs.zencdn.net/v/oceans.mp4" type="video/mp4" />
+                    Browser not supported
+                </video>
+            </div>
         </div>
     </div>
     <div ibmRow class="landing-page__r6">
