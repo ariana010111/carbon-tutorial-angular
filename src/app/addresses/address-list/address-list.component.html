@@ -8,10 +8,11 @@
     </div>
     <div ibmRow class="address-list__r2">
         <div ibmCol [columnNumbers]="{'lg':16}">
-            item haye address
+            <app-address-list-item></app-address-list-item>
         </div>
         <div ibmCol [columnNumbers]="{'lg':16}">
-            <a href="#">add New address</a>
+            
+            <a href="#" ibmLink [disabled]="disabled" [inline]="inline">add New address</a>
         </div>
     </div>
     <!--footer btns-->
