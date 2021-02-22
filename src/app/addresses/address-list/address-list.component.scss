@@ -1,8 +1,22 @@
 @import "~carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family";
 @import "~carbon-components/scss/globals/scss/typography";
-.bx--grid,
-.bx--col-lg-16 {
+.bx--grid {
 	padding: 0px;
+}
+.address-list__banner {
+	padding-top: $spacing-04;
+	padding-bottom: $spacing-04;
+	h1 {
+		font-family: "IBM Plex Sans";
+		font-size: 20px;
+		font-weight: bold;
+		line-height: 28px;
+		color: $ui-05;
+	}
+}
+
+.address-list__r2 {
+	height: calc(100vh - 132px);
 }
 /*set bg token*/
 @mixin address-list-background() {
@@ -19,6 +33,14 @@
 
 .footer {
 	background-color: red;
+	position: fixed;
+	bottom: 0;
+	z-index: 8000;
+	width: 100%;
+	right: 0;
+	left: 0;
+	margin: auto;
+	height: 48px;
 	button {
 		width: 50%;
 		max-width: 50%;

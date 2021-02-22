@@ -116,19 +116,20 @@ p.bx--type-sans {
 	
 }
 /*--accordion--*/
-.bx--accordion,
-.bx--accordion__item,
-.bx--accordion__item:hover
+
+.bx--accordion__item
 {
 	background-color:#343a3f;
 	width:100%;
 	
 	p,
-	.bx--accordion__arrow,
 	.bx--accordion__arrow {
 		color: #ffffff;
+		fill:$ui-01;
 	}
 }
+
+	
 /*--footer--*/
 .landing-page__r6 {
 	background-color: #f8f8f8;
