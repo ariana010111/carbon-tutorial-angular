@@ -1,17 +1,17 @@
 <div ibmGrid class="bx--grid--full-width">
-    <div ibmRow class="landing-page__r1 landing-page__banner">
-    
+<!--    <div ibmRow class="landing-page__r1 landing-page__banner">
+
         <div ibmCol [columnNumbers]="{'lg': 16}">
-        
+
             <h1 class="landing-page__heading center">
               APOTHEEK
-  
+
             </h1>
             <h2 class="background">
                 BECKERS
             </h2>
           </div>
-    </div>
+    </div>-->
     <div ibmRow class="landing-page__r2">
         <div ibmCol [columnNumbers]="{'lg': 16}">
             <h3 class="bx--type-semibold">
@@ -27,7 +27,7 @@
 
     </div>
     <!--recipes table-->
-    <div ibmRow class="landing-page__r3">
+    <!--<div ibmRow class="landing-page__r3">
 
         <div ibmCol [columnNumbers]="{'lg':16}">
             <ibm-table-container>
@@ -36,7 +36,7 @@
                     <p ibmTableHeaderDescription> Recipe 1 of 2</p>
                 </ibm-table-header>
                 <ibm-table [model]="model">
-                    
+
                 </ibm-table>
 
 
@@ -53,21 +53,21 @@
             </div>
 
             <ng-template #title>
-                <p class="bx--accordion__title">Section 1 title</p>
+                <p class="bx&#45;&#45;accordion__title">Section 1 title</p>
             </ng-template>
 
             <ng-template #titleWithContext let-index="index">
-                <p class="bx--accordion__title">Section {{ index }} title</p>
+                <p class="bx&#45;&#45;accordion__title">Section {{ index }} title</p>
             </ng-template>
         </div>
 
-    </div>
+    </div>-->
     <div ibmRow class="landing-page__r4">
-      
+
             <p>
                 The delivery date and or address doesn’t suit for you?
             </p>
-      
+
 
 
         <div ibmCol [columnNumbers]="{'lg':16}">
@@ -77,7 +77,7 @@
         </div>
         <div ibmCol [columnNumbers]="{'lg':16}">
             <ibm-clickable-tile [route]="['']">
-               
+
             Choose another date and time
             </ibm-clickable-tile>
         </div>
@@ -98,7 +98,7 @@
         <div ibmCol [columnNumbers]="{'lg':16}">
             <div class="player">
                 <div class="player-icon" (click)="playPause()">
-                    
+
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="512px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve"><g><path d="M128,96v320l256-160L128,96L128,96z"/></g></svg>
                   </div>
                 <video id="my_video_1" #videoPlayer>
@@ -112,7 +112,7 @@
         <div ibmCol [columnNumbers]="{'lg':16}">
             <a href="#">
                 Receptstatus.nl
-               
+
             </a>
             <p>
                 Copyright 2020 Apotheek coach. all rights reserved.

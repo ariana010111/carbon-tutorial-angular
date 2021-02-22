@@ -1,5 +1,5 @@
-<ibm-header name="Carbon Tutorial Angular">
-    <ibm-header-navigation ariaLabel="Carbon Tutorial Angular">
+<ibm-header name="Carbon Tutorial Angular" [brand]="headerBrand">
+<!--    <ibm-header-navigation ariaLabel="Carbon Tutorial Angular">
         <ibm-header-item [route]="['/']">Home</ibm-header-item>
     </ibm-header-navigation>
     <ibm-header-navigation ariaLabel="Carbon Tutorial Angular">
@@ -15,5 +15,9 @@
         <ibm-header-action title="action">
             <svg ibmIconAppSwitcher size="20"></svg>
         </ibm-header-action>
-    </ibm-header-global> 
+    </ibm-header-global> -->
 </ibm-header>
+
+<ng-template #headerBrand>
+	<img src="./assets/images/pharmacy-logo.png" class="bx--header__brand-logo"/>
+</ng-template>
