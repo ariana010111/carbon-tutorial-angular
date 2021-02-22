@@ -11,9 +11,9 @@ export class AddressListItemComponent implements OnInit {
   }
 			//label= text("Label text", "Radio Button heading"),
 			addresses= [
-				{ title: "first home" },
-				{ title: "anatomy home" },
-				{ title: "work" }
+				{ title: "first home" , desc:" Sophiaweg 500 A 245,6523NJ Nijmegen", neighbour:" Neighbour Sophiaweg 500 A 245,6523NJ Nijmegen" , mailbox:"Mailbox"},
+				{ title: "anatomy home" , desc:" Sophiaweg 500 A 245,6523NJ Nijmegen", neighbour:" Neighbour Sophiaweg 500 A 245,6523NJ Nijmegen" , mailbox:"" },
+				{ title: "work", desc:" Sophiaweg 500 A 245,6523NJ Nijmegen", neighbour:"" , mailbox:"" }
 			]
   constructor() { }
 
