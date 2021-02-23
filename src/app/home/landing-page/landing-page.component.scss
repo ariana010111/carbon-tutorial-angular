@@ -107,6 +107,7 @@ p.bx--type-sans {
 .landing-page__r3,
 .landing-page__r4 {
 	margin-bottom: $spacing-05;
+	margin-top: $spacing-05;
 }
 .landing-page__r4 {
 	background-color: #f2f4f8;
@@ -126,8 +127,6 @@ p.bx--type-sans {
 /*---recipies------*/
 .recipies {
 	width: 100%;
-	height: 161px;
-	position: relative;
 	background: #fff;
 	border: 1px solid #dde1e6;
 	box-sizing: border-box;
@@ -168,12 +167,9 @@ p.bx--type-sans {
 }
 /*--accordion--*/
 .accordion {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
+	
 	width: 100%;
+
 }
 .bx--accordion__item
 {
