@@ -107,6 +107,7 @@ p.bx--type-sans {
 .landing-page__r3,
 .landing-page__r4 {
 	margin-bottom: $spacing-05;
+	margin-top: $spacing-05;
 }
 .landing-page__r4 {
 	background-color: #f2f4f8;
@@ -126,14 +127,50 @@ p.bx--type-sans {
 /*---recipies------*/
 .recipies {
 	width: 100%;
-	height: 161px;
-	position: relative;
 	background: #fff;
 	border: 1px solid #dde1e6;
 	box-sizing: border-box;
+	.column-6 {
+		display: block;
+		flex: 0 0 37.5%;
+		max-width: 37.5%;
+	}
+	.column-10 {
+		display: block;
+		flex: 0 0 62.5%;
+		max-width: 62.5%;
+	}
+	.column-5 {
+		display: block;
+		flex: 0 0 31.25%;
+		max-width: 31.25%;
+	}
+	.column-6 {
+		display: block;
+		flex: 0 0 37.5%;
+		max-width: 37.5%;
+	}
+	label {
+		color: #878d96;
+		font-size: 10px;
+		display: inline-block;
+		width: 100%;
+		margin-bottom: $spacing-03;
+	}
+	span {
+		display: inline-block;
+		font-size: 12px;
+		font-weight: bold;
+		color: $ui-05;
+	}
+
 }
 /*--accordion--*/
+.accordion {
+	
+	width: 100%;
 
+}
 .bx--accordion__item
 {
 	background-color:#343a3f;

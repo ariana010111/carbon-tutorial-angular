@@ -27,21 +27,59 @@
     <!--recipes table-->
     <div ibmRow class="landing-page__r3">
 
-        <div ibmCol [columnNumbers]="{'lg':16}">
-                    <h4 ibmTableHeaderTitle> Total recipes : 1</h4>
-                    <p ibmTableHeaderDescription> Recipe 1 of 2</p>
-        </div>
+       
         <div ibmCol [columnNumbers]="{'lg':16}" class="recipies">
            <div ibmRow>
-            <div ibmCol [columnNumbers]="{'lg':6}">
-                sdsldsdfs
+             <div ibmCol  class="column-5">
+               <label>
+                   Recipe No
+              </label>
+               <span class="recipeNoValue">
+                   541745
+               </span>
+              </div> 
+               <div ibmCol class="column-11">
+            <label>
+              Address
+           </label>
+            <span class="addressValue">
+                541745
+            </span>
            </div>
-           <div ibmCol [columnNumbers]="{'lg':10}">
-               kfffffff
-           </div>
-           <div ibmRow>2</div>
         </div>
-        <div style="width:100%">
+           <div ibmRow>
+               <div ibmCol class="column-5">
+                <label>
+                  Payment
+                 </label>
+                  <span class="paymentValue">
+                     0 / 10 $ Unpaid
+                  </span>
+               </div>
+               <div ibmCol class="column-5">
+                <label>
+                  Receiving Type
+               </label>
+                <span class="deliveryTypeValue">
+                   Delivery
+                </span>
+               </div>
+               <div ibmCol class="column-6">
+                <label>
+                  Delivery Date
+               </label>
+                <span class="dateValue">
+                   23-06-2019 Sun 12:20
+                </span>
+               </div>
+           
+        </div>
+       
+      
+        
+    </div>
+    <div ibmRow style="width:100%">
+        <div class="accordion" style="width:100%">
             <ibm-accordion>
                 <ibm-accordion-item [title]="title">Lorem ipsum dolor sit amet, \
                 consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore \
@@ -60,7 +98,7 @@
             <p class="bx--accordion__title">Section {{ index }} title</p>
         </ng-template>
 
-    </div>
+       </div>
     <div ibmRow class="landing-page__r4">
 
             <p>
