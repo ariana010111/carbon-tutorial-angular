@@ -15,7 +15,7 @@ import {GridModule,
 import { AddressListItemComponent } from './address-list/address-list-item/address-list-item.component';
 import { AddComponent } from './address-list/add/add.component';
 import { ReactiveFormsModule} from '@angular/forms'
-import { DeleteModule, EditModule} from "@carbon/icons-angular";
+import { DeleteModule, EditModule , ArrowLeftModule , CloseModule , CheckmarkModule ,ChevronRightModule} from "@carbon/icons-angular";
 @NgModule({
 	declarations: [AddressListComponent, AddressListItemComponent, AddComponent],
 	imports: [
@@ -31,7 +31,11 @@ import { DeleteModule, EditModule} from "@carbon/icons-angular";
 		 ReactiveFormsModule,
 		 SelectModule,
 		DeleteModule,
-		EditModule
+		EditModule, 
+		ArrowLeftModule, 
+		CloseModule, 
+		CheckmarkModule, 
+		ChevronRightModule
 	]
 })
 export class AddressesModule { }
