@@ -131,9 +131,50 @@ p.bx--type-sans {
 	background: #fff;
 	border: 1px solid #dde1e6;
 	box-sizing: border-box;
+	.column-6 {
+		display: block;
+		flex: 0 0 37.5%;
+		max-width: 37.5%;
+	}
+	.column-10 {
+		display: block;
+		flex: 0 0 62.5%;
+		max-width: 62.5%;
+	}
+	.column-5 {
+		display: block;
+		flex: 0 0 31.25%;
+		max-width: 31.25%;
+	}
+	.column-6 {
+		display: block;
+		flex: 0 0 37.5%;
+		max-width: 37.5%;
+	}
+	label {
+		color: #878d96;
+		font-size: 10px;
+		display: inline-block;
+		width: 100%;
+		margin-bottom: $spacing-03;
+	}
+	span {
+		display: inline-block;
+		font-size: 12px;
+		font-weight: bold;
+		color: $ui-05;
+	}
+
 }
 /*--accordion--*/
-
+.accordion {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+}
 .bx--accordion__item
 {
 	background-color:#343a3f;
