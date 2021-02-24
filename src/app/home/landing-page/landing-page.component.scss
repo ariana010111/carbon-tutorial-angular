@@ -121,8 +121,9 @@ p.bx--type-sans {
 		font-size: 16px;
 		line-height: 21px;
 		color: #4d5358;
-
 		padding: $spacing-05;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
 	}
 }
 /*---recipies------*/
@@ -207,7 +208,7 @@ footer {
 			display: inline-block;
 		}
 		p {
-			color: $ui-03;
+			color: $text-03;
 
 			font-style: normal;
 			font-weight: normal;

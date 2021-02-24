@@ -84,5 +84,21 @@ header {
 }
 svg {
   fill:#fff;
-  vertical-align: sub;
+  vertical-align: middle;
+}
+.bx--accordion__title svg {
+  fill: #24a047;
+}
+.bx--accordion__heading {
+  align-items: baseline;
+  justify-content: center;
+  height: 50px;
+  padding:0.75rem 0;
+
+}
+.bx--tile--clickable {
+  font-size: 13px;
+}
+.bx--accordion__title {
+  padding-left: $spacing-05;
 }
