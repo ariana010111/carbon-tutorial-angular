@@ -1,12 +1,20 @@
 import { Component, OnInit,ViewChild, ElementRef } from '@angular/core';
 import {TableModel,
 TableItem,
-TableHeaderItem} from 'carbon-components-angular'
+TableHeaderItem} from 'carbon-components-angular';
+
 @Component({
 	selector: 'app-landing-page',
 	templateUrl: './landing-page.component.html',
 	styleUrls: ['./landing-page.component.scss']
 })
+// export interface ActionOptions {
+// 	depth?: number;
+// 	clearOnStoryChange?: boolean;
+// 	limit?: number;
+// 	allowFunction?: boolean;
+// }
+// export declare type HandlerFunction = (...args: any[]) => void; export declare function action(name: string, options?: ActionOptions): HandlerFunction;
 export class LandingPageComponent implements OnInit {
 	model = new TableModel();
 	constructor() { }
@@ -40,7 +48,7 @@ export class LandingPageComponent implements OnInit {
 		
 		  ];
 		}
-
+		// selected = action("item expanded");
 		isPlay: boolean = false;
 		toggleVideo(event: any) {
 		  this.videoplayer.nativeElement.play();
@@ -51,4 +59,5 @@ export class LandingPageComponent implements OnInit {
 			if (myVideo.paused) myVideo.play();
 			else myVideo.pause();
 		  }
+		 
 }
