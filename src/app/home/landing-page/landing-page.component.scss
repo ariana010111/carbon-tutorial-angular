@@ -57,7 +57,7 @@ header {
 	@include landing-page-background;
 }
 p {
-	font-size: 14px;
+	font-size: 13px;
 	font-style: normal;
 	font-weight: normal;
 	line-height: 18px;
@@ -65,11 +65,12 @@ p {
 	margin-bottom: $spacing-05;
 }
 h3 {
-	font-size: 16px;
-	font-style: bold;
+	font-size: 13px;
+	font-weight:600;
 	margin: $spacing-05 0;
 	line-height: 18px;
 	color: #000;
+	
 }
 h4 {
 	width: 100%;
@@ -83,7 +84,7 @@ h4 {
 	margin-bottom: $spacing-05;
 }
 span {
-	font-size: 12px;
+	font-size: 13px;
 	font-style: normal;
 	font-weight: normal;
 	line-height: 18px;
@@ -107,6 +108,11 @@ p.bx--type-sans {
 	margin-bottom: $spacing-05;
 	margin-top: $spacing-05;
 }
+.landing-page__r2 {
+	div.bx--col-lg-16 {
+		padding: 0;
+	}
+}
 .landing-page__r4 {
 	background-color: #f2f4f8;
 	p {
@@ -126,6 +132,11 @@ p.bx--type-sans {
 	border: 1px solid #dde1e6;
 	padding: $spacing-05;
 	box-sizing: border-box;
+	.bx--row {
+		.bx--col {
+			padding-left: 0;
+		}
+	}
 	.column-6 {
 		display: block;
 		flex: 0 0 37.5%;
@@ -155,7 +166,7 @@ p.bx--type-sans {
 	}
 	span {
 		display: inline-block;
-		font-size: 12px;
+		font-size: 13px;
 		font-weight: bold;
 		color: $ui-05;
 	}
@@ -190,7 +201,7 @@ footer {
 
 			font-style: normal;
 			font-weight: 500;
-			font-size: 12px;
+			font-size: 13px;
 			line-height: 18px;
 			margin: $spacing-05 auto;
 			display: inline-block;
@@ -202,7 +213,7 @@ footer {
 			font-weight: normal;
 			text-align: center;
 			margin: $spacing-05 auto;
-			font-size: 12px;
+			font-size: 13px;
 		}
 	}
 }
