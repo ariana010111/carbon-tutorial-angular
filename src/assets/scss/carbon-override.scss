@@ -113,3 +113,7 @@ svg {
   outline: 0;
     }
 }
+.bx--radio-button:checked + .bx--radio-button__label .bx--radio-button__appearance::before {
+  background: #3D95CC;
+  border-color: #3D95CC;
+}
