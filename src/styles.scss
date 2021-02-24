@@ -5,10 +5,12 @@ $feature-flags: (
 );
 
 @import "~carbon-components/scss/globals/scss/styles";
-/*@import "./assets/scss/carbon-override.scss";
+@import "./assets/scss/carbon-override.scss";
 @import "~carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family";
-@import "~carbon-components/scss/globals/scss/typography";*/
-
+@import "~carbon-components/scss/globals/scss/typography";
+.bx--header__nav {
+	display: block;
+}
 body {
   font-family: 'IBM Plex Sans';
 }
