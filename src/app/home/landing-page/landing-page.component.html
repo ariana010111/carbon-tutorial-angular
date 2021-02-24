@@ -91,7 +91,9 @@
         </div>
 
         <ng-template #title>
-            <p class="bx--accordion__title">Section 1 title</p>
+            <p class="bx--accordion__title">
+                <ibm-icon-in-progress size="20"></ibm-icon-in-progress>
+                Recipe is in filling process ...</p>
         </ng-template>
 
         <ng-template #titleWithContext let-index="index">
@@ -109,22 +111,25 @@
 
         <div ibmCol [columnNumbers]="{'lg':16}">
             <ibm-clickable-tile [route]="['']">
+                <ibm-icon-location size="16"></ibm-icon-location>
                 Deliver to another address
             </ibm-clickable-tile>
         </div>
         <div ibmCol [columnNumbers]="{'lg':16}">
             <ibm-clickable-tile [route]="['']">
-
+                <ibm-icon-calendar size="16"></ibm-icon-calendar>
             Choose another date and time
             </ibm-clickable-tile>
         </div>
         <div ibmCol [columnNumbers]="{'lg':16}">
             <ibm-clickable-tile [route]="['']">
+                <ibm-icon-building size="16"></ibm-icon-building>
                 Deliver to neighbor
             </ibm-clickable-tile>
         </div>
         <div ibmCol [columnNumbers]="{'lg':16}">
             <ibm-clickable-tile [route]="['']">
+                <ibm-icon-email size="16"></ibm-icon-email>
                 Deliver to your mailbox
             </ibm-clickable-tile>
         </div>
@@ -136,7 +141,10 @@
             <div class="player">
                 <div class="player-icon" (click)="playPause()">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="512px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve"><g><path d="M128,96v320l256-160L128,96L128,96z"/></g></svg>
+                   <ibm-icon-play-outline size="32"></ibm-icon-play-outline>
+                   <p>
+                    Ik heb als hoofdgebruiker een account ontvagen. Hoe maak ik voor mijn personeel account aan?
+                   </p>
                   </div>
                 <video id="my_video_1" #videoPlayer>
                     <source src="https://vjs.zencdn.net/v/oceans.mp4" type="video/mp4" />
