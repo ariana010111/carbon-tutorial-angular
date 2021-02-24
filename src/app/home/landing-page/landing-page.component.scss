@@ -289,3 +289,9 @@ footer {
 		}
 	}
 }
+.bx--accordion__item{
+	border-top: 0px;
+}
+.bx--accordion__item:last-child {
+	border-bottom: 0px;
+}

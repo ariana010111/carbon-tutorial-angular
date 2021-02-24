@@ -90,10 +90,48 @@
     <div ibmRow style="width:100%">
         <div class="accordion" style="width:100%">
             <ibm-accordion>
-                <ibm-accordion-item [title]="title">Lorem ipsum dolor sit amet, \
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore \
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation \
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <ibm-accordion-item [title]="title">
+                    <div class="accordion" style="width:100%">
+                        <ibm-accordion>
+                            <ibm-accordion-item [title]="title">Lorem ipsum dolor sit amet, \
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore \
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation \
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </ibm-accordion-item>
+            
+                        </ibm-accordion>
+                    </div>
+            
+                    <ng-template #title>
+                        <p class="bx--accordion__title">
+                            <ibm-icon-in-progress size="20"></ibm-icon-in-progress>
+                            Recipe is in filling process ...</p>
+                    </ng-template>
+            
+                    <ng-template #titleWithContext let-index="index">
+                        <p class="bx--accordion__title">Section {{ index }} title</p>
+                    </ng-template>
+                    <div class="accordion" style="width:100%">
+                        <ibm-accordion>
+                            <ibm-accordion-item [title]="title">Lorem ipsum dolor sit amet, \
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore \
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation \
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </ibm-accordion-item>
+            
+                        </ibm-accordion>
+                    </div>
+            
+                    <ng-template #title>
+                        <p class="bx--accordion__title">
+                            <ibm-icon-in-progress size="20"></ibm-icon-in-progress>
+                            Recipe is in filling process ...</p>
+                    </ng-template>
+            
+                    <ng-template #titleWithContext let-index="index">
+                        <p class="bx--accordion__title">Section {{ index }} title</p>
+                    </ng-template>
+               
             </ibm-accordion-item>
 
             </ibm-accordion>
@@ -106,7 +144,9 @@
         </ng-template>
 
         <ng-template #titleWithContext let-index="index">
-            <p class="bx--accordion__title">Section {{ index }} title</p>
+            <p class="bx--accordion__title">
+                Section {{ index }} title
+            </p>
         </ng-template>
 
        </div>

@@ -101,3 +101,15 @@ svg {
 .bx--tile--clickable {
   font-size: 13px;
 }
+
+.bx--accordion__heading
+ {
+  background-color: #343a3f;
+  color: #fff;
+  &:hover::before,
+    &:focus::before {
+      background-color: #343a3f;
+  color: #fff;
+  outline: 0;
+    }
+}
