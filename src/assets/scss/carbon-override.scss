@@ -60,9 +60,11 @@ header {
   padding: 0.5rem 1rem;
 }
 
-.bx--tile {
+
+.bx--tile.bx--tile--clickable.bx--link {
 	padding:$spacing-05 0;
 	min-height:0;
+  color: #3d95cc;
   border-bottom: 1px solid #dde1e6;
 }
 .landing-page__r4 {
@@ -98,7 +100,4 @@ svg {
 }
 .bx--tile--clickable {
   font-size: 13px;
-}
-.bx--accordion__title {
-  padding-left: $spacing-05;
 }

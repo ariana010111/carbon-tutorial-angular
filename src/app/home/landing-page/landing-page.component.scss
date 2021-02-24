@@ -66,11 +66,10 @@ p {
 }
 h3 {
 	font-size: 13px;
-	font-weight:600;
+	font-weight: 600;
 	margin: $spacing-05 0;
 	line-height: 18px;
 	color: #000;
-	
 }
 h4 {
 	width: 100%;
@@ -113,6 +112,7 @@ p.bx--type-sans {
 		padding: 0;
 	}
 }
+
 .landing-page__r4 {
 	background-color: #f2f4f8;
 	p {
@@ -127,15 +127,38 @@ p.bx--type-sans {
 	}
 }
 /*---recipies------*/
+.landing-page__r3 {
+	.recipies-title {
+		padding:0;
+	h3 {
+		text-transform: capitalize;
+	}
+	span {
+		text-transform: capitalize;
+	}
+}
+}
 .recipies {
 	width: 100%;
 	background: #fff;
 	border: 1px solid #dde1e6;
-	padding: $spacing-05;
+	padding: $spacing-05 0px;
 	box-sizing: border-box;
 	.bx--row {
-		.bx--col {
-			padding-left: 0;
+		&:first-child {
+			border-bottom: 1px solid #f2f4f8;
+			.bx--col {
+				margin-bottom: $spacing-05;
+			}
+		}
+		&:nth-child(2) {
+			.bx--col {
+				border-right: 1px solid #f2f4f8;
+				margin-top: $spacing-05;
+				&:last-child {
+					border-right: 0px;
+				}
+			}
 		}
 	}
 	.column-6 {
@@ -170,6 +193,9 @@ p.bx--type-sans {
 		font-size: 13px;
 		font-weight: bold;
 		color: $ui-05;
+		&.text-danger {
+			color:#da1e28;
+		}
 	}
 }
 /*--accordion--*/
@@ -186,8 +212,6 @@ p.bx--type-sans {
 		fill: $ui-01;
 	}
 }
-
-/*---delivery way---*/
 
 /*--footer--*/
 footer {

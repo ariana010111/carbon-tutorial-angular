@@ -27,8 +27,17 @@
     <!--recipes table-->
     <div ibmRow class="landing-page__r3">
 
-       
+      <div ibmCol [columnNumbers]="{'lg': 16}" class="recipies-title">
+        <h3>
+            total recipies :2
+           
+        </h3>
+        <span>
+            recipe 1 of 2
+        </span>
+      </div>
         <div ibmCol [columnNumbers]="{'lg':16}" class="recipies">
+
            <div ibmRow>
              <div ibmCol  class="column-5">
                <label>
@@ -52,8 +61,8 @@
                 <label>
                   Payment
                  </label>
-                  <span class="paymentValue">
-                     0 / 10 $ Unpaid
+                  <span class="paymentValue text-danger">
+                    0 / € 10 Unpaid
                   </span>
                </div>
                <div ibmCol class="column-5">
