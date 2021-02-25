@@ -15,7 +15,15 @@ ol {
             color: $ui-05;
             position: relative;
             box-sizing: border-box;
-            
+            &::selection , &:hover {
+                border: 2px solid #3d95cc;
+            }
+            .bx--radio-button:checked ,
+            .bx--radio-button:checked ,
+             .bx--radio-button__label .bx--radio-button__appearance::before
+            .bx--radio-button__label .bx--radio-button__appearanc {
+                border-color: #3d95cc;
+            }
             fieldset {
               
                 position: absolute;
@@ -25,11 +33,14 @@ ol {
             ul.control-icons {
                
                 position: absolute;
-                right: 0;
-                top: 0;
+                right: $spacing-05;
+                top: $spacing-05;
                 li {
                     display: inline-block;
                     color: $ui-05;
+                    &:first-child {
+                        padding-right:$spacing-03;
+                    }
                 }
             }
             address {
@@ -61,4 +72,7 @@ ol {
 .bx--radio-button:checked + .bx--radio-button__label .bx--radio-button__appearance::before ,
 .bx--radio-button:checked + .bx--radio-button__label .bx--radio-button__appearance::before{
     background-color: #3d95cc !important;
+}
+.bx--link{
+    text-decoration: underline;
 }

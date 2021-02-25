@@ -1,12 +1,13 @@
 @import "~carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family";
 @import "~carbon-components/scss/globals/scss/typography";
 .bx--grid {
-	padding:$spacing-04;
+	padding:$spacing-04 0px;
 }
 header {
 	padding-top: $spacing-04;
 	padding-bottom: $spacing-04;
 	text-align: left;
+	z-index: 9999;
 	div {
 		margin-inline-end: auto;
 		h1 {
@@ -33,12 +34,21 @@ header {
 	@include address-list-background;
   }
 
+  .address-list__r2 {
+	  div {
+		  padding: 0px;
+	  }
+  }
+
 footer {
 	
 
 	button {
 		width: 50%;
 		max-width: 50%;
+		svg {
+			fill: #fff;
+		}
 	}
 	button.success {
 		background-color: #6c9c46;
