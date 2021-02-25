@@ -27,59 +27,62 @@
             recipe 1 of 2
         </span>
       </div>
-        <div ibmCol [columnNumbers]="{'lg':16}" class="recipies">
+        <div ibmCol [columnNumbers]="{'lg':16}" >
 
-           <div ibmRow>
-             <div ibmCol  class="column-5">
+          <div class="recipies">
+            <div ibmRow>
+                <div ibmCol  class="column-5">
+                  <label>
+                      Recipe No
+                 </label>
+                  <span class="recipeNoValue">
+                      541745
+                  </span>
+                 </div>
+                  <div ibmCol class="column-11">
                <label>
-                   Recipe No
+                 Address
               </label>
-               <span class="recipeNoValue">
-                   541745
+               <span class="addressValue">
+                   Sophiaweg 500 A 245, 6523NJ Nijmegen
                </span>
               </div>
-               <div ibmCol class="column-11">
-            <label>
-              Address
-           </label>
-            <span class="addressValue">
-                Sophiaweg 500 A 245, 6523NJ Nijmegen
-            </span>
            </div>
-        </div>
-           <div ibmRow>
-               <div ibmCol class="column-5">
-                <label>
-                  Payment
-                 </label>
-                  <span class="paymentValue text-danger">
-                    0 / € 10 Unpaid
-                  </span>
-               </div>
-               <div ibmCol class="column-5">
-                <label>
-                  Receiving Type
-               </label>
-                <span class="deliveryTypeValue">
-                   Delivery
-                </span>
-               </div>
-               <div ibmCol class="column-6">
-                <label>
-                  Delivery Date
-               </label>
-                <span class="dateValue">
-                   23-06-2019 Sun 12:20
-                </span>
-               </div>
-
-        </div>
+              <div ibmRow>
+                  <div ibmCol class="column-5">
+                   <label>
+                     Payment
+                    </label>
+                     <span class="paymentValue text-danger">
+                       0 / € 10 Unpaid
+                     </span>
+                  </div>
+                  <div ibmCol class="column-5">
+                   <label>
+                     Receiving Type
+                  </label>
+                   <span class="deliveryTypeValue">
+                      Delivery
+                   </span>
+                  </div>
+                  <div ibmCol class="column-6">
+                   <label>
+                     Delivery Date
+                  </label>
+                   <span class="dateValue">
+                      23-06-2019 Sun 12:20
+                   </span>
+                  </div>
+   
+           </div>
+          </div>
 
 
 
     </div>
-    <div ibmRow style="width:100%">
-        <div class="accordion" style="width:100%">
+    <div ibmRow style="width:100%;">
+       <div ibmCol [columnNumbers]="{'lg':16}">
+        <div class="accordion">
             <ibm-accordion>
                 <ibm-accordion-item [title]="title">
                     <div class="accordion" style="width:100%">
@@ -139,40 +142,43 @@
                 Section {{ index }} title
             </p>
         </ng-template>
+       </div>
 
        </div>
     <div ibmRow class="landing-page__r4">
 
-            <p>
-                The delivery date and or address doesn’t suit for you?
-            </p>
+     
+        <p>
+            The delivery date and or address doesn’t suit for you?
+        </p>
+  
 
 
-
-        <div ibmCol [columnNumbers]="{'lg':16}">
-            <ibm-clickable-tile [route]="['']">
-                <ibm-icon-location size="16"></ibm-icon-location>
-                Deliver to another address
-            </ibm-clickable-tile>
-        </div>
-        <div ibmCol [columnNumbers]="{'lg':16}">
-            <ibm-clickable-tile [route]="['']">
-                <ibm-icon-calendar size="16"></ibm-icon-calendar>
-            Choose another date and time
-            </ibm-clickable-tile>
-        </div>
-        <div ibmCol [columnNumbers]="{'lg':16}">
-            <ibm-clickable-tile [route]="['']">
-                <ibm-icon-building size="16"></ibm-icon-building>
-                Deliver to neighbor
-            </ibm-clickable-tile>
-        </div>
-        <div ibmCol [columnNumbers]="{'lg':16}">
-            <ibm-clickable-tile [route]="['']">
-                <ibm-icon-email size="16"></ibm-icon-email>
-                Deliver to your mailbox
-            </ibm-clickable-tile>
-        </div>
+    <div ibmCol [columnNumbers]="{'lg':16}">
+        <ibm-clickable-tile [route]="['']">
+            <ibm-icon-location size="16"></ibm-icon-location>
+            Deliver to another address
+        </ibm-clickable-tile>
+    </div>
+    <div ibmCol [columnNumbers]="{'lg':16}">
+        <ibm-clickable-tile [route]="['']">
+            <ibm-icon-calendar size="16"></ibm-icon-calendar>
+        Choose another date and time
+        </ibm-clickable-tile>
+    </div>
+    <div ibmCol [columnNumbers]="{'lg':16}">
+        <ibm-clickable-tile [route]="['']">
+            <ibm-icon-building size="16"></ibm-icon-building>
+            Deliver to neighbor
+        </ibm-clickable-tile>
+    </div>
+    <div ibmCol [columnNumbers]="{'lg':16}">
+        <ibm-clickable-tile [route]="['']">
+            <ibm-icon-email size="16"></ibm-icon-email>
+            Deliver to your mailbox
+        </ibm-clickable-tile>
+    </div>
+      
 
     </div>
 

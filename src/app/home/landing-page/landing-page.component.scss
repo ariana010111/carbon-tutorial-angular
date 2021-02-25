@@ -2,7 +2,7 @@
 @import "~carbon-components/scss/globals/scss/typography";
 .bx--grid {
 	padding: 0px;
-	padding-bottom: 7rem;
+	padding-top:67px;
 }
 
 /*set bg token*/
@@ -67,15 +67,14 @@ p.bx--type-sans {
 	margin-bottom: $spacing-05;
 	margin-top: $spacing-05;
 }
-.landing-page__r2 {
-	div.bx--col-lg-16 {
-		padding: 0;
-	}
-}
+
 
 .landing-page__r4 {
-	background-color: #f2f4f8;
-	width: 100%;
+
+		background-color: #f2f4f8;
+		width: calc(100% - 2rem);
+		margin:1rem auto;
+	
 	p {
 		font-style: normal;
 		font-weight: 600;
@@ -90,7 +89,7 @@ p.bx--type-sans {
 /*---recipies------*/
 .landing-page__r3 {
 	.recipies-title {
-		padding:0;
+		
 	h3 {
 		text-transform: capitalize;
 	}
@@ -184,9 +183,7 @@ p.bx--type-sans {
 /*---video---*/
 .landing-page__r5 {
 	margin: auto;
-	div {
-		padding: 0;
-	}
+	
 }
 .player {
 	position: relative;
