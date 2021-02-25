@@ -11,9 +11,8 @@ import { UIShellModule } from 'carbon-components-angular';
 import { FooterComponent } from './@layout/footer/footer.component';
 @NgModule({
 	declarations: [
-		AppComponent,
-		HeaderComponent,
-		FooterComponent
+		AppComponent
+	
 	],
 	imports: [
 		BrowserModule,

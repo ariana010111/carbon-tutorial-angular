@@ -1,0 +1,30 @@
+@import "~carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family";
+@import "~carbon-components/scss/globals/scss/typography";
+footer {
+	background-color: $ui-01;
+	height: 110px;
+	div {
+		margin: auto;
+		text-align: center;
+		a {
+			color: #121619;
+			text-decoration-line: underline;
+
+			font-style: normal;
+			font-weight: 500;
+			font-size: 13px;
+			line-height: 18px;
+			margin: $spacing-05 auto;
+			display: inline-block;
+		}
+		p {
+			color: $text-03;
+
+			font-style: normal;
+			font-weight: normal;
+			text-align: center;
+			margin: $spacing-05 auto;
+			font-size: 13px;
+		}
+	}
+}

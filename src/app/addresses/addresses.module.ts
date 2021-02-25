@@ -10,11 +10,12 @@ import {GridModule,
 	 LinkModule ,
 	 InputModule ,
 	 DropdownModule,
-	SelectModule
+	SelectModule,
+	UIShellModule
 	} from 'carbon-components-angular';
 import { AddressListItemComponent } from './address-list/address-list-item/address-list-item.component';
 import { AddComponent } from './address-list/add/add.component';
-import { ReactiveFormsModule} from '@angular/forms'
+import { ReactiveFormsModule} from '@angular/forms';
 import { DeleteModule, EditModule , ArrowLeftModule , CloseModule , CheckmarkModule ,ChevronRightModule} from "@carbon/icons-angular";
 @NgModule({
 	declarations: [AddressListComponent, AddressListItemComponent, AddComponent],
@@ -35,7 +36,8 @@ import { DeleteModule, EditModule , ArrowLeftModule , CloseModule , CheckmarkMod
 		ArrowLeftModule,
 		CloseModule,
 		CheckmarkModule,
-		ChevronRightModule
+		ChevronRightModule,
+		UIShellModule
 	]
 })
 export class AddressesModule { }

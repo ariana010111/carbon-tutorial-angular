@@ -44,11 +44,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     align-items: center;
     justify-content: space-between;
   }
-header {
-  height: 3.5rem;
-  padding: 0.5rem 1rem;
-}
 
+.bx--header {
+	height: 67px;
+}
 
 .bx--tile.bx--tile--clickable.bx--link {
 	padding:$spacing-05 0;
