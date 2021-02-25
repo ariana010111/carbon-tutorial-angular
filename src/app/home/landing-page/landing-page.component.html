@@ -1,4 +1,11 @@
-<header>
+<ibm-header name="Carbon Tutorial Angular" [brand]="headerBrand">
+   
+    </ibm-header>
+    
+    <ng-template #headerBrand>
+        <img src="./assets/images/pharmacy-logo.png" class="bx--header__brand-logo"/>
+    </ng-template>
+<!-- <header>
    <div>
     <h1 class="landing-page__heading center">
         APOTHEEK
@@ -7,7 +14,7 @@
           BECKERS
       </h2>
    </div>
-</header>
+</header> -->
 <div ibmGrid class="bx--grid--full-width">
 
     <div ibmRow class="landing-page__r2">
