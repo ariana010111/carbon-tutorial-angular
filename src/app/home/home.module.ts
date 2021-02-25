@@ -6,6 +6,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 
 import { GridModule } from 'carbon-components-angular';
 import {TableModule,TilesModule, AccordionModule } from 'carbon-components-angular';
+import {LocationModule , CalendarModule , BuildingModule , EmailModule , PlayOutlineModule , PauseOutlineModule , InProgressModule} from '@carbon/icons-angular'
 @NgModule({
 	declarations: [LandingPageComponent],
 	imports: [
@@ -15,7 +16,13 @@ import {TableModule,TilesModule, AccordionModule } from 'carbon-components-angul
 		TableModule,
 		TilesModule,
 		AccordionModule,
-
+		LocationModule,
+		CalendarModule,
+		BuildingModule,
+		EmailModule,
+		PlayOutlineModule, 
+		PauseOutlineModule,
+		InProgressModule
 	]
 })
 export class HomeModule { }

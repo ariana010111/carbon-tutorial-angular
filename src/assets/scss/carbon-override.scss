@@ -1,4 +1,7 @@
-
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+{
+  font-family: "IBM Plex Sans";
+}
 .bx--grid--full-width {
     padding-left: 0;
     padding-right: 0;
@@ -23,6 +26,9 @@
   }
 
   // forces the navigation items to be displayed at all viewport sizes
+  .bx--header {
+    border-bottom: 0px;
+  }
   .bx--header__nav {
     display: block;
   }
@@ -41,4 +47,62 @@
 header {
   height: 3.5rem;
   padding: 0.5rem 1rem;
+}
+
+
+.bx--tile.bx--tile--clickable.bx--link {
+	padding:$spacing-05 0;
+	min-height:0;
+  color: #3d95cc;
+  border-bottom: 1px solid #dde1e6;
+}
+.landing-page__r4 {
+  div:last-child .bx--tile {
+  border-bottom: 0;
+  }
+  svg {
+    fill:rgba(61, 149, 204, 1);
+  }
+}
+.player-icon svg {
+  fill: #fff;
+  position: absolute;
+		  top: 45%;
+		  left: 45%;
+		  right: 45%;
+		  bottom: 45%;
+		 
+}
+svg {
+  fill:#fff;
+  vertical-align: middle;
+}
+.bx--accordion__title svg {
+  fill: #24a047;
+}
+.bx--accordion__heading {
+  align-items: baseline;
+  justify-content: center;
+  height: 50px;
+  padding:0.75rem 0;
+
+}
+.bx--tile--clickable {
+  font-size: 13px;
+}
+
+.bx--accordion__heading
+ {
+  background-color: #343a3f;
+  color: #fff;
+  &:hover::before,
+    &:focus::before {
+      background-color: #343a3f;
+  color: #fff;
+  outline: 0;
+    }
+}
+.bx--radio-button:checked + .bx--radio-button__label .bx--radio-button__appearance::before {
+  background: #3D95CC;
+  border-color: #3D95CC;
 }
