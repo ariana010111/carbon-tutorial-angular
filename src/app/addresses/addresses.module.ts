@@ -31,10 +31,10 @@ import { DeleteModule, EditModule , ArrowLeftModule , CloseModule , CheckmarkMod
 		 ReactiveFormsModule,
 		 SelectModule,
 		DeleteModule,
-		EditModule, 
-		ArrowLeftModule, 
-		CloseModule, 
-		CheckmarkModule, 
+		EditModule,
+		ArrowLeftModule,
+		CloseModule,
+		CheckmarkModule,
 		ChevronRightModule
 	]
 })

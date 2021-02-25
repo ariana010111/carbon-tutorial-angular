@@ -5,13 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from "./@layout/header/header.component";
 // carbon-components-angular default imports
 import { UIShellModule } from 'carbon-components-angular';
+import { FooterComponent } from './@layout/footer/footer.component';
 @NgModule({
 	declarations: [
 		AppComponent,
-		HeaderComponent
+		HeaderComponent,
+		FooterComponent
 	],
 	imports: [
 		BrowserModule,

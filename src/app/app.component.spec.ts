@@ -2,7 +2,7 @@ import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { UIShellModule } from 'carbon-components-angular';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './@layout/header/header.component';
 import { NotificationModule } from '@carbon/icons-angular';
 import { UserAvatarModule } from '@carbon/icons-angular';
 import { AppSwitcherModule } from '@carbon/icons-angular';
