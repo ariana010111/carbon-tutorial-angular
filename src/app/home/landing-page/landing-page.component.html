@@ -1,115 +1,117 @@
 <app-header></app-header>
 <div ibmGrid class="bx--grid--full-width">
 
-    <div ibmRow class="landing-page__r2">
-        <div ibmCol [columnNumbers]="{'lg': 16}">
-            <h3 class="bx--type-semibold">
-                Dear Mr.John Doe
-            </h3>
-        </div>
-        <div ibmCol [columnNumbers]="{'lg':16}">
-            <p class="bx--type-sans">
-                Your recipe is being processed. You can see the status of your recipe below and change the delivery
-                setting if needed.
-            </p>
-        </div>
+	<div ibmRow class="landing-page__r2">
+		<div ibmCol [columnNumbers]="{'lg': 16}">
+			<h3 class="bx--type-semibold">
+				Dear Mr.John Doe
+			</h3>
+		</div>
+		<div ibmCol [columnNumbers]="{'lg':16}">
+			<p class="bx--type-sans">
+				Your recipe is being processed. You can see the status of your recipe below and change the delivery
+				setting if needed.
+			</p>
+		</div>
 
-    </div>
-    <!--recipes table-->
-    <div ibmRow class="landing-page__r3">
+	</div>
+	<!--recipes table-->
+	<div ibmRow class="landing-page__r3">
 
-      <div ibmCol [columnNumbers]="{'lg': 16}" class="recipies-title">
-        <h3>
-            total recipies : 2
+		<div ibmCol [columnNumbers]="{'lg': 16}" class="recipies-title">
+			<h3>
+				total recipies : 2
 
-        </h3>
-        <span>
+			</h3>
+			<span>
             recipe 1 of 2
         </span>
-      </div>
-        <div ibmCol [columnNumbers]="{'lg':16}" >
+		</div>
+		<div ibmCol [columnNumbers]="{'lg':16}" >
 
-          <div class="recipies">
-            <div ibmRow>
-                <div ibmCol  class="column-5">
-                  <label>
-                      Recipe No
-                 </label>
-                  <span class="recipeNoValue">
+			<div class="recipies">
+				<div ibmRow>
+					<div ibmCol  class="column-5">
+						<label>
+							Recipe No
+						</label>
+						<span class="recipeNoValue">
                       541745
                   </span>
-                 </div>
-                  <div ibmCol class="column-11">
-               <label>
-                 Address
-              </label>
-               <span class="addressValue">
+					</div>
+					<div ibmCol class="column-11">
+						<label>
+							Address
+						</label>
+						<span class="addressValue">
                    Sophiaweg 500 A 245, 6523NJ Nijmegen
                </span>
-              </div>
-           </div>
-              <div ibmRow>
-                  <div ibmCol class="column-5">
-                   <label>
-                     Payment
-                    </label>
-                     <span class="paymentValue text-danger">
+					</div>
+				</div>
+				<div ibmRow>
+					<div ibmCol class="column-5">
+						<label>
+							Payment
+						</label>
+						<span class="paymentValue text-danger">
                        0 / € 10 Unpaid
                      </span>
-                  </div>
-                  <div ibmCol class="column-5">
-                   <label>
-                     Receiving Type
-                  </label>
-                   <span class="deliveryTypeValue">
+					</div>
+					<div ibmCol class="column-5">
+						<label>
+							Receiving Type
+						</label>
+						<span class="deliveryTypeValue">
                       Delivery
                    </span>
-                  </div>
-                  <div ibmCol class="column-6">
-                   <label>
-                     Delivery Date
-                  </label>
-                   <span class="dateValue">
+					</div>
+					<div ibmCol class="column-6">
+						<label>
+							Delivery Date
+						</label>
+						<span class="dateValue">
                       23-06-2019 Sun 12:20
                    </span>
-                  </div>
+					</div>
 
-           </div>
-          </div>
+				</div>
+			</div>
 
 
 
-    </div>
-    <div ibmRow style="width:100%;">
-       <div ibmCol [columnNumbers]="{'lg':16}">
-        <div class="accordion">
-            <ibm-accordion>
-                <ibm-accordion-item [title]="title">
+		</div>
+		<div ibmRow style="width:100%;">
+			<div ibmCol [columnNumbers]="{'lg':16}">
+				<div class="accordion">
 
-					<ng-template #title>
+
+
+					<button type="button" class="bx--accordion__heading"
+					(click)="showDetailOfReceipe(0)">
+						<ibm-icon-chevron-down size="16"></ibm-icon-chevron-down>
 						<p class="bx--accordion__title">
-							<ibm-icon-in-progress size="20"></ibm-icon-in-progress>
-							Recipe is in filling process ...
+							<ibm-icon-in-progress size="20">
+							</ibm-icon-in-progress> Recipe is in filling process ...
 							<span class="detail">Detail</span>
 						</p>
-					</ng-template>
+					</button>
 
-                    <div class="accordion" style="width:100%">
-                        <ibm-accordion>
+					<div class="accordion" style="width:100%" *ngIf="receipeDetailDisplay[0]">
+						<ibm-accordion [expanded]="false">
 							<!--step 2 -->
-                            <ibm-accordion-item [title]="step1" [expanded]="false" (selected)="selected($event)">
+							<ibm-accordion-item [title]="step1" (selected)="selected($event)">
 								<ng-template #step1>
 									<p class="bx--accordion__title">
 										Step 1. Recipe received
 									</p>
 								</ng-template>
-                                <p>
-                                    Onze koerier is om 12-16-2020 12:40 bij u geweest maar heeft uw recept niet kunnen bezorgen. Mogelijk is niet het juiste adres bij ons bekend. U kunt het recpt de volgende werkdag vanaf 14 uur afhalen.we jln m kjk kbnmmdmz  hhjjbvajvb hkcv.
-                                </p>
-                        	</ibm-accordion-item>
+								<p>
+									Onze koerier is om 12-16-2020 12:40 bij u geweest maar heeft uw recept niet kunnen bezorgen. Mogelijk is niet het juiste adres bij ons bekend. U kunt het recpt de volgende werkdag vanaf 14 uur afhalen.we jln m kjk kbnmmdmz  hhjjbvajvb hkcv.
+								</p>
+							</ibm-accordion-item>
 
 							<!--step 2 -->
-							<ibm-accordion-item [title]="step2" [expanded]="false">
+							<ibm-accordion-item [title]="step2" >
 								<ng-template #step2>
 									<p class="bx--accordion__title">
 
@@ -124,76 +126,88 @@
 									Estimated Delivery Date: 23-06-2019
 								</p>
 							</ibm-accordion-item>
-                        </ibm-accordion>
-                    </div>
-
-
-            </ibm-accordion-item>
-
-            </ibm-accordion>
-        </div>
-
-       </div>
-
-       </div>
-    <div ibmRow class="landing-page__r4">
-
-
-        <p>
-            The delivery date and or address doesn’t suit for you?
-        </p>
+						</ibm-accordion>
+					</div>
 
 
 
-    <div ibmCol [columnNumbers]="{'lg':16}">
-        <ibm-clickable-tile [route]="['']">
-            <ibm-icon-location size="16"></ibm-icon-location>
-            Deliver to another address
-        </ibm-clickable-tile>
-    </div>
-    <div ibmCol [columnNumbers]="{'lg':16}">
-        <ibm-clickable-tile [route]="['']">
-            <ibm-icon-calendar size="16"></ibm-icon-calendar>
-        Choose another date and time
-        </ibm-clickable-tile>
-    </div>
-    <div ibmCol [columnNumbers]="{'lg':16}">
-        <ibm-clickable-tile [route]="['']">
-            <ibm-icon-building size="16"></ibm-icon-building>
-            Deliver to neighbor
-        </ibm-clickable-tile>
-    </div>
-    <div ibmCol [columnNumbers]="{'lg':16}">
-        <ibm-clickable-tile [route]="['']">
-            <ibm-icon-email size="16"></ibm-icon-email>
-            Deliver to your mailbox
-        </ibm-clickable-tile>
-    </div>
+					<!--					<ibm-accordion>
+                                            <ibm-accordion-item [title]="title" (selected)="selected($event)" >
+
+                                                <ng-template #title>
+                                                    <p class="bx&#45;&#45;accordion__title">
+                                                        <ibm-icon-in-progress size="20"></ibm-icon-in-progress>
+                                                        Recipe is in filling process ...
+                                                        <span class="detail">Detail</span>
+                                                    </p>
+                                                </ng-template>
 
 
-    </div>
+                                            </ibm-accordion-item>
+                                        </ibm-accordion>-->
+				</div>
 
-    <div ibmRow class="landing-page__r5">
-        <div ibmCol [columnNumbers]="{'lg':16}">
-            <div class="player">
-                <div class="player-icon" (click)="playPause()">
+			</div>
 
-                  <div class="video-content">
-                    <ibm-icon-play-outline size="32"></ibm-icon-play-outline>
-                    <p>
-                     Ik heb als hoofdgebruiker een account ontvagen. Hoe maak ik voor mijn personeel account aan?
-                    </p>
-                  </div>
-                  </div>
-                <video id="my_video_1" #videoPlayer>
-                    <source src="https://vjs.zencdn.net/v/oceans.mp4" type="video/mp4" />
-                    Browser not supported
-                </video>
-            </div>
-        </div>
-    </div>
+		</div>
+		<div ibmRow class="landing-page__r4">
 
-</div>
+
+			<p>
+				The delivery date and or address doesn’t suit for you?
+			</p>
+
+
+
+			<div ibmCol [columnNumbers]="{'lg':16}">
+				<ibm-clickable-tile [route]="['']">
+					<ibm-icon-location size="16"></ibm-icon-location>
+					Deliver to another address
+				</ibm-clickable-tile>
+			</div>
+			<div ibmCol [columnNumbers]="{'lg':16}">
+				<ibm-clickable-tile [route]="['']">
+					<ibm-icon-calendar size="16"></ibm-icon-calendar>
+					Choose another date and time
+				</ibm-clickable-tile>
+			</div>
+			<div ibmCol [columnNumbers]="{'lg':16}">
+				<ibm-clickable-tile [route]="['']">
+					<ibm-icon-building size="16"></ibm-icon-building>
+					Deliver to neighbor
+				</ibm-clickable-tile>
+			</div>
+			<div ibmCol [columnNumbers]="{'lg':16}">
+				<ibm-clickable-tile [route]="['']">
+					<ibm-icon-email size="16"></ibm-icon-email>
+					Deliver to your mailbox
+				</ibm-clickable-tile>
+			</div>
+
+
+		</div>
+
+		<div ibmRow class="landing-page__r5">
+			<div ibmCol [columnNumbers]="{'lg':16}">
+				<div class="player">
+					<div class="player-icon" (click)="playPause()">
+
+						<div class="video-content">
+							<ibm-icon-play-outline size="32"></ibm-icon-play-outline>
+							<p>
+								Ik heb als hoofdgebruiker een account ontvagen. Hoe maak ik voor mijn personeel account aan?
+							</p>
+						</div>
+					</div>
+					<video id="my_video_1" #videoPlayer>
+						<source src="https://vjs.zencdn.net/v/oceans.mp4" type="video/mp4" />
+						Browser not supported
+					</video>
+				</div>
+			</div>
+		</div>
+
+	</div>
 
 </div>
 <app-footer></app-footer>

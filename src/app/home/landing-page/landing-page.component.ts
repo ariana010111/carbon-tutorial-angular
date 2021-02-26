@@ -18,6 +18,7 @@ import {
 // }
 // export declare type HandlerFunction = (...args: any[]) => void; export declare function action(name: string, options?: ActionOptions): HandlerFunction;
 export class LandingPageComponent implements OnInit {
+	public receipeDetailDisplay = [false];
 	model = new TableModel();
 
 	constructor() {
@@ -71,5 +72,9 @@ export class LandingPageComponent implements OnInit {
 	public selected(event) {
 		console.log(event);
 
+	}
+
+	public showDetailOfReceipe(receipeIndex) {
+		this.receipeDetailDisplay[receipeIndex] = !this.receipeDetailDisplay[receipeIndex];
 	}
 }
