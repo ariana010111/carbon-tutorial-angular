@@ -20,7 +20,7 @@
 
       <div ibmCol [columnNumbers]="{'lg': 16}" class="recipies-title">
         <h3>
-            total recipies :2
+            total recipies : 2
 
         </h3>
         <span>
@@ -87,10 +87,10 @@
                 <ibm-accordion-item [title]="title">
                     <div class="accordion" style="width:100%">
                         <ibm-accordion>
-                            <ibm-accordion-item [title]="title">Lorem ipsum dolor sit amet, \
-                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore \
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation \
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            <ibm-accordion-item [title]="step1">
+                                <p>
+                                    Onze koerier is om 12-16-2020 12:40 bij u geweest maar heeft uw recept niet kunnen bezorgen. Mogelijk is niet het juiste adres bij ons bekend. U kunt het recpt de volgende werkdag vanaf 14 uur afhalen.we jln m kjk kbnmmdmz  hhjjbvajvb hkcv.
+                                </p>
                         </ibm-accordion-item>
 
                         </ibm-accordion>
@@ -99,30 +99,38 @@
                     <ng-template #title>
                         <p class="bx--accordion__title">
                             <ibm-icon-in-progress size="20"></ibm-icon-in-progress>
-                            Recipe is in filling process ...</p>
+                            Recipe is in filling process ...
+                            <span class="detail">Detail</span>
+                        </p>
                     </ng-template>
 
                     <ng-template #titleWithContext let-index="index">
                         <p class="bx--accordion__title">Section {{ index }} title</p>
                     </ng-template>
                     <div class="accordion" style="width:100%">
+                        <!--step 2-->
                         <ibm-accordion>
-                            <ibm-accordion-item [title]="title">Lorem ipsum dolor sit amet, \
-                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore \
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation \
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                           
+                            <ibm-accordion-item [title]="step2">
+                                <p class="progress-date">23-06-2019 12:20 </p>  
+                                <p>
+                                    Onze koerier is om 12-16-2020 12:40 bij u geweest maar heeft uw recept niet kunnen bezorgen. Mogelijk is niet het juiste adres bij ons bekend. U kunt het recpt de volgende werkdag vanaf 14 uur afhalen.we jln m kjk kbnmmdmz  hhjjbvajvb hkcv.
+                                </p>
+                            <p class="estimated-date">
+                                Estimated Delivery Date: 23-06-2019 
+                            </p>
                         </ibm-accordion-item>
 
                         </ibm-accordion>
                     </div>
 
-                    <ng-template #title>
+                    <ng-template #step1>
                         <p class="bx--accordion__title">
-                            <ibm-icon-in-progress size="20"></ibm-icon-in-progress>
-                            Recipe is in filling process ...</p>
+                            Step 1. Recipe received
+                           </p>
                     </ng-template>
 
-                    <ng-template #titleWithContext let-index="index">
+                    <ng-template #titleWithContext2 let-index="index">
                         <p class="bx--accordion__title">Section {{ index }} title</p>
                     </ng-template>
 
@@ -131,13 +139,14 @@
             </ibm-accordion>
         </div>
 
-        <ng-template #title>
+        <ng-template #step2>
             <p class="bx--accordion__title">
-                <ibm-icon-in-progress size="20"></ibm-icon-in-progress>
-                Recipe is in filling process ...</p>
+             
+            Step 2.Recipe is in filling process    
+            </p>
         </ng-template>
 
-        <ng-template #titleWithContext let-index="index">
+        <ng-template #titleWithContext3 let-index="index">
             <p class="bx--accordion__title">
                 Section {{ index }} title
             </p>
@@ -187,10 +196,12 @@
             <div class="player">
                 <div class="player-icon" (click)="playPause()">
 
-                   <ibm-icon-play-outline size="32"></ibm-icon-play-outline>
-                   <p>
-                    Ik heb als hoofdgebruiker een account ontvagen. Hoe maak ik voor mijn personeel account aan?
-                   </p>
+                  <div class="video-content">
+                    <ibm-icon-play-outline size="32"></ibm-icon-play-outline>
+                    <p>
+                     Ik heb als hoofdgebruiker een account ontvagen. Hoe maak ik voor mijn personeel account aan?
+                    </p>
+                  </div>
                   </div>
                 <video id="my_video_1" #videoPlayer>
                     <source src="https://vjs.zencdn.net/v/oceans.mp4" type="video/mp4" />

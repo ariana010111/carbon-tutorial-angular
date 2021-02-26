@@ -1,3 +1,5 @@
+@import "~carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family";
+@import "~carbon-components/scss/globals/scss/typography";
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
 {
   font-family: "IBM Plex Sans";
@@ -34,10 +36,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
 
   footer {
-
+  
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
     z-index: 1040;
     height: 48px;
     width: 100%;
@@ -55,6 +55,18 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   color: #3d95cc;
   border-bottom: 1px solid #dde1e6;
 }
+.bx--link:active,
+.bx--link:hover,
+.bx--link:active:visited, 
+.bx--link:active:visited:hover
+{
+  color: #3d95cc;
+  text-decoration: none;
+}
+
+.bx--tile--clickable {
+  font-size: 12px;
+}
 .landing-page__r4 {
   div:last-child .bx--tile {
   border-bottom: 0;
@@ -64,13 +76,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
 }
 .player-icon svg {
-  fill: #fff;
-  position: absolute;
-		  top: 45%;
-		  left: 45%;
-		  right: 45%;
-		  bottom: 45%;
-		 
+  fill: #fff;		 
 }
 svg {
   fill:#fff;
@@ -104,4 +110,8 @@ svg {
 .bx--radio-button:checked + .bx--radio-button__label .bx--radio-button__appearance::before {
   background: #3D95CC;
   border-color: #3D95CC;
+}
+.bx--accordion__item--active .bx--accordion__content {
+  font-size: 12px;
+  color: #fff;
 }
