@@ -7,27 +7,31 @@ import {HeaderComponent} from '../@layout/header/header.component';
 import {FooterComponent} from '../@layout/footer/footer.component';
 import { GridModule } from 'carbon-components-angular';
 import {TilesModule,UIShellModule, AccordionModule } from 'carbon-components-angular';
-import {LocationModule , CalendarModule , BuildingModule , EmailModule , PlayOutlineModule , PauseOutlineModule , InProgressModule} from '@carbon/icons-angular'
+import {
+	LocationModule, CalendarModule, BuildingModule, EmailModule, PlayOutlineModule, PauseOutlineModule, InProgressModule,
+	ChevronDownModule
+} from "@carbon/icons-angular";
 @NgModule({
 	declarations: [
 		LandingPageComponent,
 		HeaderComponent,
-		FooterComponent
+		FooterComponent,
 	],
 	imports: [
 		CommonModule,
 		HomeRoutingModule,
 		GridModule,
-	UIShellModule,
+		UIShellModule,
 		TilesModule,
 		AccordionModule,
 		LocationModule,
 		CalendarModule,
 		BuildingModule,
 		EmailModule,
-		PlayOutlineModule, 
+		PlayOutlineModule,
 		PauseOutlineModule,
-		InProgressModule
+		InProgressModule,
+		ChevronDownModule
 	]
 })
 export class HomeModule { }
