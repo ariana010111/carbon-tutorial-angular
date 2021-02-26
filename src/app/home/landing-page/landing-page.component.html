@@ -86,17 +86,20 @@
 
 
 
-					<button type="button" class="bx--accordion__heading"
+					<div class="bx--accordion__heading"
 					(click)="showDetailOfReceipe(0)">
-						<ibm-icon-chevron-down size="16"></ibm-icon-chevron-down>
-						<p class="bx--accordion__title">
-							<ibm-icon-in-progress size="20">
-							</ibm-icon-in-progress> Recipe is in filling process ...
-							<span class="detail">Detail</span>
-						</p>
-					</button>
+							<span class="detail">
+								Detail
+								<ibm-icon-chevron-down size="16"></ibm-icon-chevron-down>
+							</span>
 
-					<div class="accordion" style="width:100%" *ngIf="receipeDetailDisplay[0]">
+							<span>
+							<ibm-icon-in-progress class="bx--accordion__progress-icon" size="20"></ibm-icon-in-progress>
+							Recipe is in filling process ...
+							</span>
+					</div>
+
+					<div class="accordion" *ngIf="receipeDetailDisplay[0]">
 						<ibm-accordion [expanded]="false">
 							<!--step 2 -->
 							<ibm-accordion-item [title]="step1" (selected)="selected($event)">
@@ -175,6 +178,16 @@
 		<div ibmRow class="landing-page__r5">
 			<div ibmCol [columnNumbers]="{'lg':16}">
 				<div class="player">
+					<iframe
+						src="https://player.vimeo.com/video/496938236?byline=false&title=false"
+						class=" w-100"
+						frameborder="0"
+						allow="autoplay; fullscreen"
+						allowfullscreen
+						style="left:0"
+					></iframe>
+				</div>
+				<!--<div class="player">
 					<div class="player-icon" (click)="playPause()">
 
 						<div class="video-content">
@@ -188,7 +201,7 @@
 						<source src="https://vjs.zencdn.net/v/oceans.mp4" type="video/mp4" />
 						Browser not supported
 					</video>
-				</div>
+				</div>-->
 			</div>
 		</div>
 

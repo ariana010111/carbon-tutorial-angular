@@ -4,6 +4,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 {
   font-family: "IBM Plex Sans";
 }
+
+// Custom helper
+.w-100{
+	width: 100%;
+}
+
 .bx--grid--full-width {
     padding-left: 0;
     padding-right: 0;
@@ -36,7 +42,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
 
   footer {
-  
+
     margin: auto;
     z-index: 1040;
     height: 48px;
@@ -57,7 +63,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 .bx--link:active,
 .bx--link:hover,
-.bx--link:active:visited, 
+.bx--link:active:visited,
 .bx--link:active:visited:hover
 {
   color: #3d95cc;
@@ -76,14 +82,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
 }
 .player-icon svg {
-  fill: #fff;		 
+  fill: #fff;
 }
 svg {
   fill:#fff;
   vertical-align: middle;
 }
 
-.bx--accordion__title svg {
+.bx--accordion__progress-icon svg {
   fill: #24a047;
 }
 .control-icons svg {
@@ -97,13 +103,7 @@ header svg {
     fill:#0f62fe;
   }
 }
-.bx--accordion__heading {
-  align-items: baseline;
-  justify-content: center;
-  height: 50px;
-  padding:0.75rem 0;
 
-}
 .bx--tile--clickable {
   font-size: 13px;
 }
@@ -112,6 +112,12 @@ header svg {
  {
   background-color: #343a3f;
   color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+	padding:0.75rem;
+	font-size: 12px;
   &:hover::before,
     &:focus::before {
       background-color: #343a3f;
