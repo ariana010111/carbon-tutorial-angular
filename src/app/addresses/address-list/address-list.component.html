@@ -1,6 +1,7 @@
 <header>
     <div>
         <h1 class="address-list__heading right">
+            <ibm-icon-arrow-left size="16"></ibm-icon-arrow-left>
             Address
         </h1>
     </div>
@@ -13,7 +14,9 @@
         </div>
         <div ibmCol [columnNumbers]="{'lg':16}">
 
-            <a href="#" ibmLink>add New address</a>
+            <a href="#" ibmLink class="addNewAddress">
+                <ibm-icon-add size="16"></ibm-icon-add>
+                Add New Address</a>
         </div>
     </div>
     <!--footer btns-->
@@ -26,7 +29,7 @@
             </button>
             <button ibmButton class="success">
                 next
-                <ibm-icon-chevron-right size="16" color="#fff"></ibm-icon-chevron-right>
+                <ibm-icon-chevron-right size="16"></ibm-icon-chevron-right>
         </button>
     </footer>
 

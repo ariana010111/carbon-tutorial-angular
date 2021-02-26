@@ -16,6 +16,7 @@ header {
 			font-weight: bold;
 			line-height: 28px;
 			color: $ui-05;
+			padding-left: 1rem;
 		}
 	}
 }
@@ -34,21 +35,16 @@ header {
 	@include address-list-background;
   }
 
-  .address-list__r2 {
-	  div {
-		  padding: 0px;
-	  }
-  }
+ 
 
 footer {
-	
+	position: fixed;
+	bottom: 0;
 
 	button {
 		width: 50%;
 		max-width: 50%;
-		svg {
-			fill: #fff;
-		}
+	
 	}
 	button.success {
 		background-color: #6c9c46;
