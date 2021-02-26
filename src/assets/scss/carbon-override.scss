@@ -82,8 +82,20 @@ svg {
   fill:#fff;
   vertical-align: middle;
 }
+
 .bx--accordion__title svg {
   fill: #24a047;
+}
+.control-icons svg {
+  fill:#4d5358;
+}
+header svg {
+  fill: #121619;
+}
+.addNewAddress {
+  svg {
+    fill:#0f62fe;
+  }
 }
 .bx--accordion__heading {
   align-items: baseline;
@@ -114,4 +126,16 @@ svg {
 .bx--accordion__item--active .bx--accordion__content {
   font-size: 12px;
   color: #fff;
+}
+footer {
+  button {
+    svg {
+      position: absolute;
+      right: $spacing-05;
+      top: $spacing-05;
+    }
+  }
+}
+address {
+  left: 2rem;
 }

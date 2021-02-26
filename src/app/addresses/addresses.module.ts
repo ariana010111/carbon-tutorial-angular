@@ -16,9 +16,10 @@ import {GridModule,
 import { AddressListItemComponent } from './address-list/address-list-item/address-list-item.component';
 import { AddComponent } from './address-list/add/add.component';
 import { ReactiveFormsModule} from '@angular/forms';
-import { DeleteModule, EditModule , ArrowLeftModule , CloseModule , CheckmarkModule ,ChevronRightModule} from "@carbon/icons-angular";
+import { DeleteModule,AddModule, EditModule , ArrowLeftModule , CloseModule , CheckmarkModule ,ChevronRightModule} from "@carbon/icons-angular";
+import { NeighborMailboxComponent } from './neighbor-mailbox/neighbor-mailbox.component';
 @NgModule({
-	declarations: [AddressListComponent, AddressListItemComponent, AddComponent],
+	declarations: [AddressListComponent, AddressListItemComponent, AddComponent, NeighborMailboxComponent],
 	imports: [
 		CommonModule,
 		AddressesRoutingModule,
@@ -37,7 +38,8 @@ import { DeleteModule, EditModule , ArrowLeftModule , CloseModule , CheckmarkMod
 		CloseModule,
 		CheckmarkModule,
 		ChevronRightModule,
-		UIShellModule
+		UIShellModule,
+		AddModule
 	]
 })
 export class AddressesModule { }
