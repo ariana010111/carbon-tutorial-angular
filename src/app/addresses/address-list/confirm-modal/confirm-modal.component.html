@@ -10,14 +10,16 @@
 
     </section>
     <ibm-modal-footer>
-        <button class="bx--btn bx--btn--secondary" (click)="closeModal()">
+        <button class="bx--btn__with-icon" size="field" ibmButton="secondary" (click)="closeModal()">
             Cancel
-            <ibm-icon-close size="16"></ibm-icon-close>
+             <ibm-icon-close size="16"></ibm-icon-close> 
+          
         </button>
-        <button class="bx--btn bx--btn--danger" modal-primary-focus (click)="delete()">
+        <button ibmButton="danger" size="field" class="bx--btn__with-icon" (click)="delete()">
            
             Delete
             <ibm-icon-delete size="16"></ibm-icon-delete>
+            <!-- <svg class="bx--btn__icon" ibmIconDelete size="16"></svg> -->
         </button>
     </ibm-modal-footer>
 </ibm-modal>

@@ -53,7 +53,7 @@ footer {
 
 	margin: auto;
 	z-index: 1040;
-	height: 48px;
+	height: 42px;
 	width: 100%;
 	align-items: center;
 	justify-content: space-between;
@@ -160,20 +160,14 @@ header svg {
 	font-size: 12px;
 	color: #fff;
 }
-footer {
-	button {
-		svg {
-			position: absolute;
-			right: $spacing-05;
-			top: $spacing-05;
-		}
-	}
-}
+
 address {
 	left: 2rem;
 }
 
 .bx--modal-footer button.bx--btn {
-	height: 3rem;
-    padding-bottom: 1rem;
+	height: 2.5rem;
+}
+.bx--btn.bx--btn__with-icon{
+	padding: calc(0.875rem - 3px) calc(0.875rem - 3px) calc(0.875rem - 3px) 15px;
 }
