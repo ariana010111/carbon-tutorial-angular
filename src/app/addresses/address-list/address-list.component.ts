@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ModalService} from 'carbon-components-angular'
 
 @Component({
 	selector: 'app-address-list',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class AddressListComponent implements OnInit {
 
 	
-	constructor() { }
+	constructor(private service:ModalService) { }
 
 	ngOnInit(): void {
 	}

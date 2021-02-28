@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ModalService} from 'carbon-components-angular';
+import {ConfirmModalComponent} from '../confirm-modal/confirm-modal.component';
 @Component({
   selector: 'app-address-list-item',
   templateUrl: './address-list-item.component.html',
@@ -15,9 +17,15 @@ export class AddressListItemComponent implements OnInit {
 				{ title: "anatomy home" , desc:" Sophiaweg 500 A 245,6523NJ Nijmegen", neighbour:" Neighbour Sophiaweg 500 A 245,6523NJ Nijmegen" , mailbox:"" },
 				{ title: "work", desc:" Sophiaweg 500 A 245,6523NJ Nijmegen", neighbour:"" , mailbox:"" }
 			]
-  constructor() { }
+  constructor(  public modalService: ModalService,) { }
 
   ngOnInit(): void {
   }
 
+ openModal() {
+	
+    this.modalService.create({component: ConfirmModalComponent, inputs: {
+size:"xs"}});
+  
+   }
 }

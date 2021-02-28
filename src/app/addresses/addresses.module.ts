@@ -11,15 +11,19 @@ import {GridModule,
 	 InputModule ,
 	 DropdownModule,
 	SelectModule,
-	UIShellModule
+	UIShellModule,
+	ModalModule,
+	ModalService,
+	PlaceholderModule
 	} from 'carbon-components-angular';
 import { AddressListItemComponent } from './address-list/address-list-item/address-list-item.component';
 import { AddComponent } from './address-list/add/add.component';
 import { ReactiveFormsModule} from '@angular/forms';
 import { DeleteModule,AddModule, EditModule , ArrowLeftModule , CloseModule , CheckmarkModule ,ChevronRightModule} from "@carbon/icons-angular";
 import { NeighborMailboxComponent } from './neighbor-mailbox/neighbor-mailbox.component';
+import { ConfirmModalComponent } from './address-list/confirm-modal/confirm-modal.component';
 @NgModule({
-	declarations: [AddressListComponent, AddressListItemComponent, AddComponent, NeighborMailboxComponent],
+	declarations: [AddressListComponent, AddressListItemComponent, AddComponent, NeighborMailboxComponent, ConfirmModalComponent],
 	imports: [
 		CommonModule,
 		AddressesRoutingModule,
@@ -39,7 +43,10 @@ import { NeighborMailboxComponent } from './neighbor-mailbox/neighbor-mailbox.co
 		CheckmarkModule,
 		ChevronRightModule,
 		UIShellModule,
-		AddModule
+		AddModule,
+		ModalModule,
+		PlaceholderModule
+	
 	]
 })
 export class AddressesModule { }

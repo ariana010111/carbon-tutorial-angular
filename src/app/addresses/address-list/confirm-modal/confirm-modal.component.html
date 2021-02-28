@@ -1,0 +1,23 @@
+<ibm-modal [size]="size" [open]="open" (overlaySelected)="closeModal()">
+    <ibm-modal-header (closeSelect)="closeModal()">
+        <h1>Delete Address</h1>
+
+    </ibm-modal-header>
+    <section ibmModalContent>
+        <p>
+            Are you sure you want to delete the address ?
+        </p>
+
+    </section>
+    <ibm-modal-footer>
+        <button class="bx--btn bx--btn--secondary" (click)="closeModal()">
+            Cancel
+            <ibm-icon-close size="16"></ibm-icon-close>
+        </button>
+        <button class="bx--btn bx--btn--danger" modal-primary-focus (click)="delete()">
+           
+            Delete
+            <ibm-icon-delete size="16"></ibm-icon-delete>
+        </button>
+    </ibm-modal-footer>
+</ibm-modal>
