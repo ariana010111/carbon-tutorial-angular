@@ -5,12 +5,23 @@ $feature-flags: (
 );
 
 @import "~carbon-components/scss/globals/scss/styles";
+
 @import "./assets/scss/carbon-override.scss";
+@import "./assets/scss/carbon-variable-override.scss";
 @import "~carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family";
 @import "~carbon-components/scss/globals/scss/typography";
+
+
 .bx--header__nav {
 	display: block;
 }
-body {
-  font-family: 'IBM Plex Sans';
-}
+
+// Bootstrap Required
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/grid";
+

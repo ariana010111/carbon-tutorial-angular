@@ -21,6 +21,7 @@
     "@angular/router": "~9.1.12",
     "@angular/service-worker": "~9.1.12",
     "@carbon/icons-angular": "^11.2.1",
+    "bootstrap": "^4.6.0",
     "carbon-components": "^10.28.0",
     "carbon-components-angular": "^4.40.1",
     "node-sass": "^4.0.0",

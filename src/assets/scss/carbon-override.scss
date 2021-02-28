@@ -1,8 +1,11 @@
 @import "~carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family";
 @import "~carbon-components/scss/globals/scss/typography";
+@import "carbon-variable-override";
+
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
 {
-  font-family: "IBM Plex Sans";
+	font-family: "IBM Plex Sans";
 }
 
 // Custom helper
@@ -10,138 +13,162 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	width: 100%;
 }
 
+p{
+	font-size: $default-font-size;
+}
+
 .bx--grid--full-width {
-    padding-left: 0;
-    padding-right: 0;
+	padding-left: 0;
+	padding-right: 0;
 
-  }
+}
 
-  // removes excess padding for nested full width grids
-  .bx--grid--full-width .bx--grid--full-width {
-    padding-left: 0;
-    padding-right: 0;
-  }
+// removes excess padding for nested full width grids
+.bx--grid--full-width .bx--grid--full-width {
+	padding-left: 0;
+	padding-right: 0;
+}
 
-  // removes extraneous row margins in the full width grid
-  .bx--grid--full-width .bx--row {
-    margin-left: 0;
-    margin-right: 0;
-  }
+// removes extraneous row margins in the full width grid
+.bx--grid--full-width .bx--row {
+	margin-left: 0;
+	margin-right: 0;
+}
 
-  // aligns the tabs to the right
-  .landing-page__r2 .bx--tabs__nav {
-    right: 0;
-  }
+// aligns the tabs to the right
+.landing-page__r2 .bx--tabs__nav {
+	right: 0;
+}
 
-  // forces the navigation items to be displayed at all viewport sizes
-  .bx--header {
-    border-bottom: 0px;
-  }
-  .bx--header__nav {
-    display: block;
-  }
-
-  footer {
-
-    margin: auto;
-    z-index: 1040;
-    height: 48px;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-  }
-
+// forces the navigation items to be displayed at all viewport sizes
 .bx--header {
-	height: 67px;
+	border-bottom: 0px;
+	hight: $home-header-height;
+}
+.bx--header__nav {
+	display: block;
+}
+
+footer {
+
+	margin: auto;
+	z-index: 1040;
+	height: 48px;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .bx--tile.bx--tile--clickable.bx--link {
 	padding:$spacing-05 0;
 	min-height:0;
-  color: #3d95cc;
-  border-bottom: 1px solid #dde1e6;
+	color: #3d95cc;
+	border-bottom: 1px solid #dde1e6;
 }
 .bx--link:active,
 .bx--link:hover,
 .bx--link:active:visited,
 .bx--link:active:visited:hover
 {
-  color: #3d95cc;
-  text-decoration: none;
+	color: #3d95cc;
+	text-decoration: none;
 }
 
 .bx--tile--clickable {
-  font-size: 12px;
+	font-size: 12px;
 }
 .landing-page__r4 {
-  div:last-child .bx--tile {
-  border-bottom: 0;
-  }
-  svg {
-    fill:rgba(61, 149, 204, 1);
-  }
+	div:last-child .bx--tile {
+		border-bottom: 0;
+	}
+	svg {
+		fill:rgba(61, 149, 204, 1);
+	}
 }
 .player-icon svg {
-  fill: #fff;
+	fill: #fff;
 }
 svg {
-  fill:#fff;
-  vertical-align: middle;
+	fill:#fff;
+	vertical-align: middle;
 }
 
 .bx--accordion__progress-icon svg {
-  fill: #24a047;
+	fill: #24a047;
 }
 .control-icons svg {
-  fill:#4d5358;
+	fill:#4d5358;
 }
 header svg {
-  fill: #121619;
+	fill: #121619;
 }
 .addNewAddress {
-  svg {
-    fill:#0f62fe;
-  }
+	svg {
+		fill:#0f62fe;
+	}
 }
 
 .bx--tile--clickable {
-  font-size: 13px;
+	font-size: 13px;
 }
 
-.bx--accordion__heading
- {
-  background-color: #343a3f;
-  color: #fff;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 50px;
-	padding:0.75rem;
-	font-size: 12px;
-  &:hover::before,
-    &:focus::before {
-      background-color: #343a3f;
-  color: #fff;
-  outline: 0;
-    }
-}
+
 .bx--radio-button:checked + .bx--radio-button__label .bx--radio-button__appearance::before {
-  background: #3D95CC;
-  border-color: #3D95CC;
+	background: #3D95CC;
+	border-color: #3D95CC;
 }
+
+
+.accordion{
+	.bx--accordion__item {
+		background-color: #343a3f;
+		width: 100%;
+		.bx--accordion__title{
+			color: $cool-gray-40;
+			font-size: $default-font-size;
+		}
+		.bx--accordion__arrow {
+			color: #ffffff;
+			fill: $ui-01;
+		}
+		svg{
+			fill: #fff;
+		}
+	}
+	.bx--accordion__heading{
+		&:hover::before,
+		&:focus::before {
+			background-color: $cool-gray-80;
+			color: #fff;
+		}
+	}
+
+	.bx--accordion__heading:focus::before{
+		color: #fff;
+		border: none;
+		outline: 0;
+	}
+	.bx--accordion__title.bx--accordion__item--active .bx--accordion__title{
+		color: $white-0;
+	}
+	.bx--accordion__content > p{
+		font-size: $default-font-size;
+	}
+}
+
 .bx--accordion__item--active .bx--accordion__content {
-  font-size: 12px;
-  color: #fff;
+	font-size: 12px;
+	color: #fff;
 }
 footer {
-  button {
-    svg {
-      position: absolute;
-      right: $spacing-05;
-      top: $spacing-05;
-    }
-  }
+	button {
+		svg {
+			position: absolute;
+			right: $spacing-05;
+			top: $spacing-05;
+		}
+	}
 }
 address {
-  left: 2rem;
+	left: 2rem;
 }
