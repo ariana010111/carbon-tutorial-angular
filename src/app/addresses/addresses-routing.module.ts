@@ -10,15 +10,15 @@ const routes: Routes = [
 		component: AddressListComponent
 	},
 	{
-		path: 'address/add',
+		path: 'add',
 		component: AddComponent
 	},
 	{
-		path: 'address/neighbormailbox',
+		path: 'neighbormailbox',
 		component: NeighborMailboxComponent
 	},
 	{
-		path: 'address/confirm',
+		path: 'confirm',
 		component: ConfirmModalComponent
 	}
 ];
