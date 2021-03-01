@@ -48,33 +48,34 @@
                 <input ibmText [autocomplete]="false" formControlName="JouwAdres">
             </ibm-label>
         </div>
-       <!--Searching adres-->
-       <div ibmRow class="form-item">
+       <!--Loading Data adres-->
+       <div ibmRow class="form-item bx--input__with-loading">
         <ibm-label>
-            Searching adres
-            <input ibmText [autocomplete]="false" formControlName="JouwAdres">
+            Loading Data adres
+            <input ibmText class="loadingData" [autocomplete]="false" formControlName="JouwAdres">
         </ibm-label>
+        <ibm-loading class="loading" [isActive]="true" size="sm"></ibm-loading>
     </div>
      <!--Success adres-->
-     <div ibmRow class="form-item">
+     <div ibmRow class="form-item success bx--input__with-icon">
         <ibm-label>
             Success adres
             <input ibmText [autocomplete]="false" formControlName="JouwAdres">
+
         </ibm-label>
+        <ibm-icon-checkmark-outline size="16"></ibm-icon-checkmark-outline>
     </div>
      <!--failed adres-->
-     <div ibmRow class="form-item">
+     <div ibmRow class="form-item failed-data bx--input__with-icon">
         <ibm-label
         helperText="This address is outside of our service area."
-        #loading
-				(onSuccess)="onSuccess()"
-				loadingText="loadingText"
-				successText="successText"
-                errorText="errorText"
+ 
         >
         failed adres
-            <input ibmText [autocomplete]="false" formControlName="JouwAdres">
+            <input ibmText [autocomplete]="false" class="error" formControlName="JouwAdres">
         </ibm-label>
+        <ibm-icon-warning size="16"></ibm-icon-warning>
+
     </div>
         <div ibmRow class="form-item">
             <fieldset class="bx--fieldset">

@@ -185,6 +185,7 @@ header svg {
 .support-link {
 	color:#3d95cc;
 	text-decoration: underline;
+	font-size: 12px;
 	svg {
 		fill: #3D95CC;
 	}
@@ -263,4 +264,45 @@ address {
 	line-height: 16px;
 	color: #da1e28;
 box-sizing: border-box;
+}
+.bx--text-input.error {
+	background-color: #ffd7d9;
+	border-bottom: 0px;
+	padding-right: 2.75rem;
+}
+.bx--text-input.error:focus,
+ .bx--text-input.error:active
+ {
+	 outline: 2px solid #da1e28;
+ }
+.failed-data svg {
+	fill: #da1e28;
+	
+}
+.success svg {
+	fill:#24a148;
+}
+.bx--input__with-icon svg {
+
+	position: absolute;
+	right: 1rem;
+	top: 2.15rem;
+}
+.bx--checkbox-label {
+	font-size: 12px;
+}
+.bx--label {
+	color: #4D5358;
+}
+.bx--input__with-loading {
+	position:relative;
+}
+.bx--input__with-loading .loading {
+	position: absolute;
+	top: 2.15rem;
+	right: 1rem;
+}
+.bx--text-input.loadingData {
+	background-color: #e0e0e0;
+	border-bottom: 0px;
 }
