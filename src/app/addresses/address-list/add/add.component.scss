@@ -2,6 +2,7 @@
 @import "~carbon-components/scss/globals/scss/typography";
 .bx--grid {
 	padding:$spacing-04;
+	padding-bottom: 153px;
 }
 header {
 	padding-top: $spacing-04;
@@ -10,15 +11,19 @@ header {
 	div {
 		margin-inline-end: auto;
 		h1 {
-			font-family: "IBM Plex Sans";
-			font-size: 20px;
-			font-weight: bold;
-			line-height: 28px;
+			
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 24px;
 			color: $ui-05;
+			padding-left: 1rem;
 		}
 	}
 }
-
+.form-item {
+	margin-bottom: $spacing-05;
+	
+}
 
 /*set bg token*/
 @mixin add-background() {
@@ -33,7 +38,8 @@ header {
   }
 
 footer {
-	
+	position: fixed;
+	bottom: 0;
 
 	button {
 		width: 50%;

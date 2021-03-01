@@ -1,7 +1,9 @@
 <header>
     <div>
         <h1 class="address-list__heading right">
+            <ibm-icon-arrow-left size="16"></ibm-icon-arrow-left>
             Add New Address
+
         </h1>
     </div>
 </header>
@@ -21,19 +23,17 @@
                 <input ibmText [autocomplete]="false" formControlName="postCode">
             </ibm-label>
         </div>
-   
+
         <div ibmRow class="form-item">
             <ibm-label>Huisnr
-            <ibm-select
-            [size]="100"
-            ariaLabel='ngModel select'>
-            <option value="default" disabled selected hidden>Choose an option</option>
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
-        </ibm-select>
-    </ibm-label>
-           </div>
+                <ibm-select [size]="100" ariaLabel='ngModel select'>
+                    <option value="default" disabled selected hidden>Choose an option</option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </ibm-select>
+            </ibm-label>
+        </div>
         <!--Huisnr. Toevoeging-->
         <div ibmRow class="form-item">
             <ibm-label>
@@ -48,30 +48,63 @@
                 <input ibmText [autocomplete]="false" formControlName="JouwAdres">
             </ibm-label>
         </div>
+       <!--Searching adres-->
+       <div ibmRow class="form-item">
+        <ibm-label>
+            Searching adres
+            <input ibmText [autocomplete]="false" formControlName="JouwAdres">
+        </ibm-label>
+    </div>
+     <!--Success adres-->
+     <div ibmRow class="form-item">
+        <ibm-label>
+            Success adres
+            <input ibmText [autocomplete]="false" formControlName="JouwAdres">
+        </ibm-label>
+    </div>
+     <!--failed adres-->
+     <div ibmRow class="form-item">
+        <ibm-label
+        helperText="This address is outside of our service area."
+        #loading
+				(onSuccess)="onSuccess()"
+				loadingText="loadingText"
+				successText="successText"
+                errorText="errorText"
+        >
+        failed adres
+            <input ibmText [autocomplete]="false" formControlName="JouwAdres">
+        </ibm-label>
+    </div>
         <div ibmRow class="form-item">
-            <ibm-label>
-                Post Code
-                <input ibmText [autocomplete]="false" formControlName="postCode">
-            </ibm-label>
-        </div>
-        <div ibmCol [columnNumbers]="{'lg':16}">
+            <fieldset class="bx--fieldset">
 
-            <a href="#" ibmLink>
-                Save as my default address
+                <ibm-checkbox checked="false" (change)="onChange($event)">
+                    Save as my default address
+                </ibm-checkbox>
+
+
+            </fieldset>
+        </div>
+        <div ibmRow class="form-item">
+            <a href="#" ibmLink class="support-link">
+                <ibm-icon-phone size="16"></ibm-icon-phone>
+               Contact support if you cannot find your postal code.
             </a>
         </div>
     </div>
     <!--footer btns-->
     <footer>
-        <button ibmButton="secondary">
+        <button size="field" class="bx--btn__with-icon" ibmButton="secondary">
             Cancel
 
-            <svg class="bx--btn__icon" ibmIconPending32 size="20"></svg>
 
+            <ibm-icon-close size="16"></ibm-icon-close>
         </button>
-        <button ibmButton class="success" type="submit">
+        <button ibmButton size="field" class="success bx--btn__with-icon" type="submit">
             Add Address
-            <svg class="bx--btn__icon" ibmIconAdd size="20"></svg>
+            <ibm-icon-checkmark size="16"></ibm-icon-checkmark>
+
         </button>
     </footer>
 </form>

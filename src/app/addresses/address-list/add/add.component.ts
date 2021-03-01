@@ -23,4 +23,18 @@ export class AddComponent implements OnInit {
     // TODO: Use EventEmitter with form value
     console.warn(this.addressForm.value);
   }
+  onChange($event){
+
+  }
+  onSuccess(){
+
+  }
+  // toggleState() {
+	// 	switch (this.state) {
+	// 		case InlineLoadingState.Inactive: this.state = InlineLoadingState.Active; break;
+	// 		case InlineLoadingState.Active: this.state = InlineLoadingState.Finished; break;
+	// 		case InlineLoadingState.Finished: this.state = InlineLoadingState.Error; break;
+	// 		case InlineLoadingState.Error: this.state = InlineLoadingState.Inactive; break;
+	// 	}
+	// }
 }

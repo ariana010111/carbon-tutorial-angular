@@ -2,25 +2,102 @@
 @import "~carbon-components/scss/globals/scss/typography";
 @import "carbon-variable-override";
 
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
-{
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	font-family: "IBM Plex Sans";
 }
 
 // Custom helper
-.w-100{
+.w-100 {
 	width: 100%;
 }
 
-p{
+p {
 	font-size: $default-font-size;
 }
 
 .bx--grid--full-width {
 	padding-left: 0;
 	padding-right: 0;
-
 }
 
 // removes excess padding for nested full width grids
@@ -50,7 +127,6 @@ p{
 }
 
 footer {
-
 	margin: auto;
 	z-index: 1040;
 	height: 42px;
@@ -60,16 +136,15 @@ footer {
 }
 
 .bx--tile.bx--tile--clickable.bx--link {
-	padding:$spacing-05 0;
-	min-height:0;
+	padding: $spacing-05 0;
+	min-height: 0;
 	color: #3d95cc;
 	border-bottom: 1px solid #dde1e6;
 }
 .bx--link:active,
 .bx--link:hover,
 .bx--link:active:visited,
-.bx--link:active:visited:hover
-{
+.bx--link:active:visited:hover {
 	color: #3d95cc;
 	text-decoration: none;
 }
@@ -82,14 +157,14 @@ footer {
 		border-bottom: 0;
 	}
 	svg {
-		fill:rgba(61, 149, 204, 1);
+		fill: rgba(61, 149, 204, 1);
 	}
 }
 .player-icon svg {
 	fill: #fff;
 }
 svg {
-	fill:#fff;
+	fill: #fff;
 	vertical-align: middle;
 }
 
@@ -97,33 +172,39 @@ svg {
 	fill: #24a047;
 }
 .control-icons svg {
-	fill:#4d5358;
+	fill: #4d5358;
 }
 header svg {
 	fill: #121619;
 }
 .addNewAddress {
 	svg {
-		fill:#0f62fe;
+		fill: #0f62fe;
 	}
 }
-
+.support-link {
+	color:#3d95cc;
+	text-decoration: underline;
+	svg {
+		fill: #3D95CC;
+	}
+}
 .bx--tile--clickable {
 	font-size: 13px;
 }
 
-
-.bx--radio-button:checked + .bx--radio-button__label .bx--radio-button__appearance::before {
-	background: #3D95CC;
-	border-color: #3D95CC;
+.bx--radio-button:checked
+	+ .bx--radio-button__label
+	.bx--radio-button__appearance::before {
+	background: #3d95cc;
+	border-color: #3d95cc;
 }
 
-
-.accordion{
+.accordion {
 	.bx--accordion__item {
 		background-color: #343a3f;
 		width: 100%;
-		.bx--accordion__title{
+		.bx--accordion__title {
 			color: $cool-gray-40;
 			font-size: $default-font-size;
 		}
@@ -131,11 +212,11 @@ header svg {
 			color: #ffffff;
 			fill: $ui-01;
 		}
-		svg{
+		svg {
 			fill: #fff;
 		}
 	}
-	.bx--accordion__heading{
+	.bx--accordion__heading {
 		&:hover::before,
 		&:focus::before {
 			background-color: $cool-gray-80;
@@ -143,15 +224,15 @@ header svg {
 		}
 	}
 
-	.bx--accordion__heading:focus::before{
+	.bx--accordion__heading:focus::before {
 		color: #fff;
 		border: none;
 		outline: 0;
 	}
-	.bx--accordion__title.bx--accordion__item--active .bx--accordion__title{
+	.bx--accordion__title.bx--accordion__item--active .bx--accordion__title {
 		color: $white-0;
 	}
-	.bx--accordion__content > p{
+	.bx--accordion__content > p {
 		font-size: $default-font-size;
 	}
 }
@@ -168,6 +249,18 @@ address {
 .bx--modal-footer button.bx--btn {
 	height: 2.5rem;
 }
-.bx--btn.bx--btn__with-icon{
+.bx--btn.bx--btn__with-icon {
 	padding: calc(0.875rem - 3px) calc(0.875rem - 3px) calc(0.875rem - 3px) 15px;
+}
+.bx--label {
+	width: 100%;
+	font-size: 12px;
+	line-height: 15.6px;
+	font-weight: 400;
+}
+.bx--form__helper-text {
+	font-size: 12px;
+	line-height: 16px;
+	color: #da1e28;
+box-sizing: border-box;
 }
