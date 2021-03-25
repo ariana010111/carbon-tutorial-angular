@@ -7,15 +7,15 @@
         </h1>
     </div>
 </header>
-<h2>
+<p>
     Delivery Address
-</h2>
+</p>
 <div class="card">
     <div class="d-flex justify-content-around">
-        <h3 class="w-100">
+        <h2 class="w-100">
             Antony Home
             
-        </h3>
+        </h2>
         <span class="edit flex-shrink-1">
             <ibm-icon-edit size="16"></ibm-icon-edit>
         </span>
@@ -24,11 +24,28 @@
         Groenestraat 191,6531 HE Nijmegen
     </p>
 </div>
+<div class="neighbor-mailbox">
+<p>
+    If you are not at home at the time you choose, select one of the options below 
+</p>
+<div class="d-flex justify-content-around">
+    <h2 class="w-100">
+        Delivery to the neighbor
+    </h2>
+    <ibm-toggle onText=" " offText=" " size="md"></ibm-toggle>
+</div>
+<div class="d-flex justify-content-around">
+    <h2 class="w-100">
+        Delivery to mailbox
+    </h2>
+    <ibm-toggle onText=" " offText=" " checked="true" size="md"></ibm-toggle>
+</div>
+</div>
  <!--footer btns-->
  <footer class="secondary-footer">
     <button size="field" class="bx--btn__with-icon" ibmButton="secondary">
       Back
-        <ibm-icon-close size="16"></ibm-icon-close>
+        <ibm-icon-undo size="16"></ibm-icon-undo>
     </button>
     <button ibmButton size="field" class="success bx--btn__with-icon" type="submit">
        Next

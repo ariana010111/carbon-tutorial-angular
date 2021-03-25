@@ -1,21 +1,25 @@
 @import "~carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family";
 @import "~carbon-components/scss/globals/scss/typography";
-h2 {
+p {
 	font-size: 12px;
 	color: #4d5358;
-	padding: $spacing-05;
+	padding: $spacing-03 $spacing-05;
+}
+h2,
+.neighbor-mailbox p {
+	font-size: 14px;
+	color: #121619;
+	font-weight: 500;
 }
 .card {
-	padding: $spacing-05;
+	padding: $spacing-05 0;
 	border-top: 1px solid #dde1e6;
 	border-bottom: 1px solid #dde1e6;
-	h3 {
-		font-size: 14px;
-		color: #21272a;
-		font-weight: 500;
-	}
+	
 }
-
+.d-flex {
+	padding:0px $spacing-05;
+}
 .bx--input__with-icon {
 	position: relative;
 }

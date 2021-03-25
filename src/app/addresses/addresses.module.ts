@@ -17,12 +17,23 @@ import {GridModule,
 	PlaceholderModule,
 	CheckboxModule,
 	InlineLoadingModule,
-	LoadingModule
+	LoadingModule,
+	ToggleModule
 	} from 'carbon-components-angular';
 import { AddressListItemComponent } from './address-list/address-list-item/address-list-item.component';
 import { AddComponent } from './address-list/add/add.component';
 import { ReactiveFormsModule} from '@angular/forms';
-import { DeleteModule,AddModule, EditModule , ArrowLeftModule , CloseModule , CheckmarkModule ,ChevronRightModule, PhoneModule, WarningModule, CheckmarkOutlineModule} from "@carbon/icons-angular";
+import { DeleteModule,AddModule,
+	 EditModule,
+	ArrowLeftModule, 
+	CloseModule, 
+	CheckmarkModule,
+	ChevronRightModule, 
+	PhoneModule, 
+	WarningModule, 
+	CheckmarkOutlineModule,
+	UndoModule
+} from "@carbon/icons-angular";
 import { NeighborMailboxComponent } from './neighbor-mailbox/neighbor-mailbox.component';
 import { ConfirmModalComponent } from './address-list/confirm-modal/confirm-modal.component';
 @NgModule({
@@ -54,7 +65,9 @@ import { ConfirmModalComponent } from './address-list/confirm-modal/confirm-moda
 		InlineLoadingModule,
 		WarningModule,
 		CheckmarkOutlineModule,
-		LoadingModule
+		LoadingModule,
+		ToggleModule,
+		UndoModule
 	
 	]
 })
