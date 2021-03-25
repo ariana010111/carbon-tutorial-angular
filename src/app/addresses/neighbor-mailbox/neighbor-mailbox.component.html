@@ -28,13 +28,22 @@
 <p>
     If you are not at home at the time you choose, select one of the options below 
 </p>
-<div class="d-flex justify-content-around">
+<div class="d-flex justify-content-around align-items-center">
     <h2 class="w-100">
         Delivery to the neighbor
     </h2>
-    <ibm-toggle onText=" " offText=" " size="md"></ibm-toggle>
+
+    <ibm-toggle #neighbor onText=" " offText=" " size="md"></ibm-toggle>
+ 
 </div>
-<div class="d-flex justify-content-around">
+<div *ngIf="neighbor.checked == true" class="add-new d-flex">
+
+    <a [routerLink]="['add']" ibmLink class="addNewAddress">
+        Add Neighbor Address 
+        <ibm-icon-add size="16"></ibm-icon-add>
+    </a>
+</div>
+<div class="d-flex justify-content-around align-items-center">
     <h2 class="w-100">
         Delivery to mailbox
     </h2>

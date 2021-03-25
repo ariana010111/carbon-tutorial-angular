@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./neighbor-mailbox.component.scss']
 })
 export class NeighborMailboxComponent implements OnInit {
- 
+
   constructor() { }
 
   ngOnInit(): void {
