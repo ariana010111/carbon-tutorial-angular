@@ -1,6 +1,6 @@
-<header>
+<header class="secondary-navbar">
     <div>
-        <h1 class="address-list__heading right">
+        <h1>
             <ibm-icon-arrow-left size="16"></ibm-icon-arrow-left>
             Address
         </h1>
@@ -15,14 +15,15 @@
         <div ibmCol [columnNumbers]="{'lg':16}">
 
             <a [routerLink]="['add']" ibmLink class="addNewAddress">
+                Add New Address 
                 <ibm-icon-add size="16"></ibm-icon-add>
-                Add New Address</a>
+            </a>
             
         </div>
         
     </div>
     <!--footer btns-->
-    <footer>
+    <footer class="secondary-footer">
         <button size="field" class="bx--btn__with-icon" ibmButton="secondary">
             cancel
 

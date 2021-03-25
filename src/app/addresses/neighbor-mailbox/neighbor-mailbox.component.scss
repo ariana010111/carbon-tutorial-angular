@@ -1,0 +1,21 @@
+@import "~carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family";
+@import "~carbon-components/scss/globals/scss/typography";
+h2 {
+	font-size: 12px;
+	color: #4d5358;
+	padding: $spacing-05;
+}
+.card {
+	padding: $spacing-05;
+	border-top: 1px solid #dde1e6;
+	border-bottom: 1px solid #dde1e6;
+	h3 {
+		font-size: 14px;
+		color: #21272a;
+		font-weight: 500;
+	}
+}
+
+.bx--input__with-icon {
+	position: relative;
+}

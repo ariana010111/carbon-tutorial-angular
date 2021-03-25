@@ -1,45 +1,49 @@
-<ol ibmList>
+<ul ibmList>
     <li ibmListItem *ngFor="let address of addresses">
-        <div class="card" ibmLink>
-            <fieldset class="bx--fieldset">
-                <legend class="bx--label"></legend>
-                <ibm-radio-group
-                    aria-label="radiogroup"
+        <div class="card">
+            <div class="d-flex justify-content-around bg-blue">
+             
+                  
+                    <ibm-radio-group [ngClass]="flex-grow-1"
+                        aria-label="radiogroup"
+    
+                        (change)="onChange($event)">
+    
+                        <ibm-radio
+                            [value]="address.title"
+                            >
+                            {{address.title}}
+                        </ibm-radio>
+                    </ibm-radio-group>
+          
+    
+                <ul class="control-icons">
+                    <li>
+                        <ibm-icon-edit size="16"></ibm-icon-edit>
+                    </li>
+                    <li (click)="openModal()">
+                        <ibm-icon-delete size="16" ></ibm-icon-delete>
+                    </li>
+                </ul>
+            </div>
 
-                    (change)="onChange($event)">
-
-                    <ibm-radio
-                        [value]="address.title"
-                        >
-                        {{address.title}}
-                    </ibm-radio>
-                </ibm-radio-group>
-            </fieldset>
-
-            <ul class="control-icons">
-                <li>
-					<ibm-icon-edit size="16"></ibm-icon-edit>
-                </li>
-                <li (click)="openModal()">
-					<ibm-icon-delete size="16" ></ibm-icon-delete>
-                </li>
-            </ul>
-
-            <address>
-               {{address.desc}}
-            </address>
-            <ul class="delivery-way">
-                <li>
-					<ibm-icon-checkmark size="16"></ibm-icon-checkmark>
-                   {{address.neighbour}}
-                </li>
-                <li>
-					<ibm-icon-checkmark size="16"></ibm-icon-checkmark>
-					{{address.mailbox}}
-                </li>
-            </ul>
+            <div class="d-flex flex-column">
+                <address>
+                    {{address.desc}}
+                 </address>
+                 <ul class="delivery-way">
+                     <li>
+                         <ibm-icon-checkmark size="16"></ibm-icon-checkmark>
+                        {{address.neighbour}}
+                     </li>
+                     <li>
+                         <ibm-icon-checkmark size="16"></ibm-icon-checkmark>
+                         {{address.mailbox}}
+                     </li>
+                 </ul>
+            </div>
         </div>
     </li>
 
-</ol>
+</ul>
 <ibm-placeholder></ibm-placeholder>

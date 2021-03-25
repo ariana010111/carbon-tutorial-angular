@@ -24,4 +24,42 @@ $feature-flags: (
 
 @import "~bootstrap/scss/utilities";
 @import "~bootstrap/scss/grid";
+/*set bg token*/
+@mixin add-background() {
+	background-color: $ui-01;
+	&::before {
+		content: "";
+		background: $ui-01;
+	}
+}
+.secondary-navbar {
+  @include add-background;
+  padding-top: $spacing-04;
+	padding-bottom: $spacing-04;
+	text-align: left;
+  div {
+		margin-inline-end: auto;
+		h1 {
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 24px;
+			color: $ui-05;
+			padding-left: 1rem;
+		}
+	}
+}
+.secondary-footer {
+  position: fixed;
+	bottom: 0;
 
+	button {
+		width: 50%;
+		max-width: 50%;
+	}
+	button.success {
+		background-color: #6c9c46;
+	}
+}
+li {
+  list-style: none;
+}

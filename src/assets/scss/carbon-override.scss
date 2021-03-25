@@ -2,93 +2,8 @@
 @import "~carbon-components/scss/globals/scss/typography";
 @import "carbon-variable-override";
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+* {
 	font-family: "IBM Plex Sans";
-}
-
-// Custom helper
-.w-100 {
-	width: 100%;
 }
 
 p {
@@ -141,7 +56,8 @@ footer {
 	color: #3d95cc;
 	border-bottom: 1px solid #dde1e6;
 }
-.bx--link:active,
+.bx--link
+,.bx--link:active,
 .bx--link:hover,
 .bx--link:active:visited,
 .bx--link:active:visited:hover {
@@ -167,7 +83,13 @@ svg {
 	fill: #fff;
 	vertical-align: middle;
 }
-
+div ul.delivery-way li svg{
+	fill: #878d96;
+	width: 7px;
+}
+.card .edit svg {
+	fill:#4D5358;
+}
 .bx--accordion__progress-icon svg {
 	fill: #24a047;
 }
@@ -305,4 +227,9 @@ box-sizing: border-box;
 .bx--text-input.loadingData {
 	background-color: #e0e0e0;
 	border-bottom: 0px;
+}
+.bx--list--unordered > .bx--list__item::before {
+    position: unset;
+    left: 0rem;
+    content: "";
 }

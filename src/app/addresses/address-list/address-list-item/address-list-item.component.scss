@@ -1,72 +1,52 @@
 @import "~carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family";
 @import "~carbon-components/scss/globals/scss/typography";
-ol {
-    font-family: 'IBM Plex Sans';
-    li {
-        list-style: none;
-        color: #fff;
-        div {
-            width: 100%;
-            min-height: 106px;
-            background-color: #fff;
-            display: block;
-            border:1px solid $ui-01;
-            margin-bottom: $spacing-04;
+.card {
+    border:1px solid $ui-01;
+    margin-top: $spacing-04;
+    color: $ui-05;
+    box-sizing: border-box;
+    padding:0px $spacing-04 $spacing-04 0px;
+    transition: all 0.1s ease-in;
+    &::selection , &:hover {
+        border: 1px solid #3d95cc;
+    }
+    .bx--radio-button:checked ,
+    .bx--radio-button:checked ,
+     .bx--radio-button__label .bx--radio-button__appearance::before
+    .bx--radio-button__label .bx--radio-button__appearanc {
+        border-color: #3d95cc;
+    }
+   
+    ul.control-icons {
+        padding-top:$spacing-04;
+        li {
+            display: inline-block;
             color: $ui-05;
-            position: relative;
-            box-sizing: border-box;
-            &::selection , &:hover {
-                border: 2px solid #3d95cc;
-            }
-            .bx--radio-button:checked ,
-            .bx--radio-button:checked ,
-             .bx--radio-button__label .bx--radio-button__appearance::before
-            .bx--radio-button__label .bx--radio-button__appearanc {
-                border-color: #3d95cc;
-            }
-            fieldset {
-              
-                position: absolute;
-                left: 0;
-                top: 0;
-            }
-            ul.control-icons {
-               
-                position: absolute;
-                right: $spacing-05;
-                top: $spacing-05;
-                li {
-                    display: inline-block;
-                    color: $ui-05;
-                    &:first-child {
-                        padding-right:$spacing-03;
-                    }
-                }
-            }
-            address {
-                position: absolute;
-                top: $spacing-05 * 2;
-                left: $spacing-05;
-                width: 100%;
-                color: $ui-05;
-                font-size: 12px;
-            }
-            .delivery-way {
-                position: absolute;
-                top: $spacing-05 * 3;
-                left: $spacing-05;
-
-                li {
-                    color: $ui-03;
-                    font-size: 10px;
-                }
-            }
-            // padding: $spacing-05;
-            .bx--radio-button__appearance {
-                border: 1px solid #3d95cc;
-                color:#3d95cc;
+            &:first-child {
+                padding-right:$spacing-03;
             }
         }
+    }
+    address {
+       margin-top: $spacing-04;
+        color: $ui-05;
+        padding-left: $spacing-05;
+        font-size: 12px;
+    }
+    .delivery-way {
+       
+
+        li {
+            margin-top: $spacing-04;
+            color: $ui-03;
+            font-size: 10px;
+            padding-left: $spacing-05;
+        }
+    }
+    // padding: $spacing-05;
+    .bx--radio-button__appearance {
+        border: 1px solid #3d95cc;
+        color:#3d95cc;
     }
 }
 .bx--radio-button:checked + .bx--radio-button__label .bx--radio-button__appearance::before ,
